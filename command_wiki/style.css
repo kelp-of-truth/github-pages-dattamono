@@ -1,3 +1,10 @@
+@font-face {
+    font-family: minecraftfont;
+    src: url(./minecraftfont.ttf);
+}
+
+
+
 #execute_table td{
     padding: 15px;
 
@@ -6,15 +13,17 @@
 .commandBox{
     border: thick solid gray;
     border-width: 1px;
-    width: 500px;
+    width: 700px;
     word-break: break-all;
     border-radius: 3px;
     background-color: rgb(233, 233, 233);
+    font-family: minecraftfont;
 }
-.miniCommandBox{
+.smallCommandBox{
+    font-family: minecraftfont;
     border: thick solid gray;
     border-width: 1px;
-    width: 300px;
+    width: 500px;
     word-break: break-all;
     border-radius: 3px;
     background-color: rgb(233, 233, 233);
@@ -24,4 +33,7 @@
 }
 .or{
     color: rgb(0, 42, 255);
+}
+.bold{
+    font-weight: bold;
 }
