@@ -1,0 +1,27 @@
+#execute_table td{
+    padding: 15px;
+
+}
+
+.commandBox{
+    border: thick solid gray;
+    border-width: 1px;
+    width: 500px;
+    word-break: break-all;
+    border-radius: 3px;
+    background-color: rgb(233, 233, 233);
+}
+.miniCommandBox{
+    border: thick solid gray;
+    border-width: 1px;
+    width: 300px;
+    word-break: break-all;
+    border-radius: 3px;
+    background-color: rgb(233, 233, 233);
+}
+.run{
+    color: blue;
+}
+.or{
+    color: rgb(0, 42, 255);
+}
