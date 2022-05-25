@@ -2,6 +2,8 @@
 <html>
     <head>
         <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./toggle_switch.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     </head>
         <body>
             <!--目次-->
@@ -9,6 +11,10 @@
                 <a href="#executeCommand">execute</a>
             </div>
             <hr>
+
+
+
+
             <div>
                 <h2 id="executeCommand">executeコマンド</h2>
                 <div class="commandBox">
@@ -25,43 +31,53 @@
 -->
 
                     <tr>
-                        <td>as</td><td><div class="miniCommandBox">&ThinSpace;as &lt;セレクタ&gt;</div><br>指定したエンティティとして実行<br>実行者<span class="run">-></span>変わる(as)<br>向き<span class="run">-></span>変わる<br>実行位置<span class="run">-></span>変わらない</td>
+                        <td>as</td><td><div class="smallCommandBox">&ThinSpace;as &lt;セレクタ&gt;</div><br>指定したエンティティとして実行<br>実行者<span class="run">-></span>変わる(as)<br>向き<span class="run">-></span>変わる<br>実行位置<span class="run">-></span>変わらない</td>
                     </tr>
 
                     <tr>
-                        <td>positioned</td><td><div class="miniCommandBox">&ThinSpace;positioned &lt;x&gt; &lt;y&gt; &lt;z&gt;</div><br>指定した座標で実行<br>実行者<span class="run">-></span>変わらない<br>向き<span class="run">-></span>変わらない<br>実行位置<span class="run">-></span>変わる(positioned)<br><br><br>
-                                                <div class="miniCommandBox">&ThinSpace;positioned as &lt;セレクタ&gt;</div>実行者<span class="run">-></span>変わらない<br>向き<span class="run">-></span>変わらない<br>実行位置<span class="run">-></span>変わる(positioned)</td>
+                        <td>positioned</td><td><div class="smallCommandBox">&ThinSpace;positioned &lt;x&gt; &lt;y&gt; &lt;z&gt;</div><br>指定した座標で実行<br>実行者<span class="run">-></span>変わらない<br>向き<span class="run">-></span>変わらない<br>実行位置<span class="run">-></span>変わる(positioned)<br><br><br>
+                                                <div class="smallCommandBox">&ThinSpace;positioned as &lt;セレクタ&gt;</div>実行者<span class="run">-></span>変わらない<br>向き<span class="run">-></span>変わらない<br>実行位置<span class="run">-></span>変わる(positioned)</td>
                     </tr>
 
                     <tr>
-                        <td>rotated</td><td><div class="miniCommandBox">&ThinSpace;rotated &lt;y軸回転(横)&gt; &lt;x軸回転(縦)&gt</div><br>指定した角度として実行<br>実行者<span class="run">-></span>変わらない<br>向き<span class="run">-></span>変わる(rotated)<br>実行位置<span class="run">-></span>変わらない<br><br><br>
-                                            <div class="miniCommandBox">&ThinSpace;rotated as &lt;セレクタ&gt;</div><br>指定したエンティティと同じ角度として実行<br>実行者<span class="run">-></span>変わらない<br>向き<span class="run">-></span>変わる(rotated)<br>実行位置<span class="run">-></span>変わらない</td>
+                        <td>rotated</td><td><div class="smallCommandBox">&ThinSpace;rotated &lt;y軸回転(横)&gt; &lt;x軸回転(縦)&gt</div><br>指定した角度として実行<br>実行者<span class="run">-></span>変わらない<br>向き<span class="run">-></span>変わる(rotated)<br>実行位置<span class="run">-></span>変わらない<br><br><br>
+                                            <div class="smallCommandBox">&ThinSpace;rotated as &lt;セレクタ&gt;</div><br>指定したエンティティと同じ角度として実行<br>実行者<span class="run">-></span>変わらない<br>向き<span class="run">-></span>変わる(rotated)<br>実行位置<span class="run">-></span>変わらない</td>
                     </tr>
 
                     <tr>
                         <!--
-                            あくまでも、向いているとして実行しているだけなので見た目は変わらない
+                            ※向いているとして実行しているだけなので見た目は変わらない
                         -->
-                        <td>facing</td><td><div class="miniCommandBox">&ThinSpace;facing &lt;x&gt; &lt;y&gt; &lt;z&gt;</div><br>指定した座標を向いているとして実行<br>実行者<span class="run">-></span>変わらない<br>向き<span class="run">-></span>変わる(facing)<br>実行位置<span class="run">-></span>変わらない<br><br><br>
-                                            <div class="miniCommandBox">facing entity &lt;エンティティ&gt; &lt;feet <span class="or">|</span> eyes&gt;</div><br>feetの場合、足、eyesの場合、指定したエンティティの目向いているとして実行<br>実行者<span class="run">-></span>変わらない<br>向き<span class="run">-></span>変わる<br>実行位置<span class="run">-></span>変わらない</td>
+                        <td>facing</td><td><div class="smallCommandBox">&ThinSpace;facing &lt;x&gt; &lt;y&gt; &lt;z&gt;</div><br>指定した座標を向いているとして実行<br>※向いているとして実行しているだけなので見た目は変わらない<br>実行者<span class="run">-></span>変わらない<br>向き<span class="run">-></span>変わる(facing)<br>実行位置<span class="run">-></span>変わらない<br><br><br>
+                                            <div class="smallCommandBox">&ThinSpace;facing entity &lt;エンティティ&gt; &lt;feet <span class="or">|</span> eyes&gt;</div><br>feetの場合、足、eyesの場合、&lt;エンティティ&gt;で指定したエンティティの目向いているとして実行<br>実行者<span class="run">-></span>変わらない<br>向き<span class="run">-></span>変わる<br>実行位置<span class="run">-></span>変わらない</td>
                     </tr>
 
                     <tr>
-                        <td>in</td><td><div class="miniCommandBox">&ThinSpace;in &lt;overworld<sapn class="or"> | </sapn>the_nether<span class="or"> | </span>the_end&gt;</div><br>指定したディメンションで実行<br>実行者<span class="run">-></span>変わらない<br>向き<span class="run">-></span>変わらない<br>実行位置<span class="run">-></span>変わる(in 別ディメンションで)</td>
+                        <td>in</td><td><div class="smallCommandBox">&ThinSpace;in &lt;overworld<sapn class="or"> | </sapn>the_nether<span class="or"> | </span>the_end&gt;</div><br>指定したディメンションで実行<br>実行者<span class="run">-></span>変わらない<br>向き<span class="run">-></span>変わらない<br>実行位置<span class="run">-></span>変わる(in 別ディメンションで)</td>
                     </tr>
 
                     <tr>
-                        <td>at</td><td><div class="miniCommandBox">&ThinSpace;at &lt;セレクタ&gt;</div><br>指定したエンティティの場所と向きで実行<br>実行者<span class="run">-></span>変わらない<br>向き<span class="run">-></span>変わる(at)<br>実行位置<span class="run">-></span>変わる(at)</td>
+                        <td>at</td><td><div class="smallCommandBox">&ThinSpace;at &lt;セレクタ&gt;</div><br>指定したエンティティの場所と向きで実行<br>実行者<span class="run">-></span>変わらない<br>向き<span class="run">-></span>変わる(at)<br>実行位置<span class="run">-></span>変わる(at)</td>
                     </tr>
 
                     <tr>
-                        <td>anchored</td><td></td>
+                        <td>anchored</td><td><div class="smallCommandBox">&ThinSpace;anchored &lt;feet <sapn class="or">|</sapn> eyes&gt;</div><br>実行者の基準の場所を変える<br>※実行位置が変わるわけではなく、ローカル座標やfacingにのみ影響する<br>デフォルトではfeetです。</td>
                     </tr>
 
                     <tr>
-                        <td>align</td><td><div class="miniCommandBox">&ThinSpace;align &lt;x <span class="or">|</span> y <span class="or">|</span> z <span class="or">|</span> xy <span class="or">|</span> yz <span class="or">|</span> xz <span class="or">|</span> xyz&gt;</div></td>
+                        <td>align</td><td><div class="smallCommandBox">&ThinSpace;align &lt;x <span class="or">|</span> y <span class="or">|</span> z <span class="or">|</span> xy <span class="or">|</span> yz <span class="or">|</span> xz <span class="or">|</span> xyz&gt;</div><br>指定した軸の座標を整数にする(1.13は座標が<label title="nbtのposが" class="bold">double</label>型になったため)<br>これは小数点以下を切り捨てた値です</td>
+                    </tr>
+
+                    <tr>
+                        <td>if unless</td><td><div class="smallCommandBox">&ThinSpace;if &lt;block <span class="or">|</span> blocks <span class="or">|</span> data <span class="or">|</span> entity <span class="or">|</span> predicate <span class="or">|</span> score&gt;</div><br><br>
+
+                            ・block<br><div class="smallCommandBox">&ThinSpace;&lt;if <span class="or">|</span> unless&gt; &lt; block&gt; &lt;x y z&gt;</div><br>
+                            ・blocks<br><div class="commandBox">&ThinSpace;&lt;if <span class="or">|</span> unless&gt; &lt; blocks&gt; &lt;x y z&gt; &lt;x y z&gt; &lt;x y z&gt; &lt;all <span class="or">|</span> masked&gt;</div>
+
+                            <br><br>上の条件が満たされている場合にコマンドを実行するならifを使い、満たされていない場合に実行するならunlessを使う</td>
                     </tr>
                 </table>
+
             </div>
         </body>
 
