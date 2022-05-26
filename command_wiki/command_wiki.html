@@ -2,6 +2,8 @@
 <html>
     <head>
         <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./toggle_switch.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     </head>
         <body>
             <!--目次-->
@@ -67,10 +69,11 @@
                     </tr>
 
                     <tr>
-                        <td>if unless</td><td><div class="smallCommandBox">&ThinSpace;if &lt;block <span class="or">|</span> blocks <span class="or">|</span> data <span class="or">|</span> entity <span class="or">|</span> predicate <span class="or">|</span> score&gt;</div><br><br>
+                        <td>if unless</td><td><div class="smallCommandBox">&ThinSpace;if &lt;<span id="_block">block</span> <span class="or">|</span> <span id="_blocks">blocks</span> <span class="or">|</span> data <span class="or">|</span> entity <span class="or">|</span> predicate <span class="or">|</span> score&gt;</div><br><br>
 
-                            ・block<br><div class="smallCommandBox">&ThinSpace;&lt;if <span class="or">|</span> unless&gt; &lt; block&gt; &lt;x y z&gt;</div><br>
-                            ・blocks<br><div class="commandBox">&ThinSpace;&lt;if <span class="or">|</span> unless&gt; &lt; blocks&gt; &lt;x y z&gt; &lt;x y z&gt; &lt;x y z&gt; &lt;all <span class="or">|</span> masked&gt;</div>
+                            ・<span id="block_" class="onmouse">block</span><br><div class="smallCommandBox">&ThinSpace;&lt;if <span class="or">|</span> unless&gt; &lt; block&gt; &lt;x y z&gt;</div><br>
+                            ・<sapn id="blocks_" class="onmouse">blocks</sapn><br><div class="commandBox">&ThinSpace;&lt;if <span class="or">|</span> unless&gt; &lt; blocks&gt; &lt;x y z(始点)&gt; &lt;x y z(終点)&gt; &lt;x y z(比較先)&gt; &lt;<span id="_all">all</span> <span class="or">|</span> <span id="_masked">masked</span>&gt;</div><br><span class="space">　　・</span><span id="all_">all</span><br><span class="space">　　　　</span>範囲内のすべてのブロックを比較する。<br><span class="space">　　・</span><span id="masked_">masked</span><br>　　　　範囲内の空気ブロックは無視してひかくする。<br><br>
+                            ・<span id="data_" class="onmouse">data<span class="obscure">[Java Edition限定?]</span>
 
                             <br><br>上の条件が満たされている場合にコマンドを実行するならifを使い、満たされていない場合に実行するならunlessを使う</td>
                     </tr>
