@@ -13,7 +13,7 @@
 .commandBox{
     border: thick solid gray;
     border-width: 1px;
-    width: 700px;
+    width: 750px;
     word-break: break-all;
     border-radius: 3px;
     background-color: rgb(233, 233, 233);
@@ -28,6 +28,8 @@
     border-radius: 3px;
     background-color: rgb(233, 233, 233);
 }
+
+/*簡易的なもの*/
 .run{
     color: blue;
 }
@@ -36,4 +38,14 @@
 }
 .bold{
     font-weight: bold;
+}
+.space{
+    user-select: none;
+}
+.onmouse{
+    cursor: text, pointer;
+}
+.obscure{
+    cursor: help;
+    color: blue;
 }
