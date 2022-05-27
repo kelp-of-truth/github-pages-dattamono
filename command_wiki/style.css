@@ -7,7 +7,10 @@
 
 #execute_table td{
     padding: 15px;
-
+}
+#execute_table td:nth-child(1){
+    text-align: center;
+    font-size: 18px;
 }
 
 .commandBox{
@@ -45,7 +48,13 @@
 .onmouse{
     cursor: text, pointer;
 }
-.obscure{
+.hoge{
     cursor: help;
     color: blue;
+}
+.ver{
+    font-weight: bold;
+}
+.small{
+    font-size: 12px;
 }
