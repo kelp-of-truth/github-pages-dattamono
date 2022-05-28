@@ -20,7 +20,8 @@ const _entity = document.getElementById('_entity');
 const dataCommandBox = document.getElementById('if_unless_command_box');
 
 const zips = document.getElementsByClassName('zip');
-
+const dataIframeReload = document.getElementById('data_iframe_reload');
+const dataIframe = document.getElementById('data_iframe');
 
 // イベント
 // select
@@ -86,7 +87,9 @@ entity_.onmouseout=()=>{
 
 
 
+dataIframeReload.onclick=()=>{
 
+};
 
 
     // htmlからの関数
@@ -99,5 +102,10 @@ entity_.onmouseout=()=>{
                 zip0.children[1].hidden=true;
                 zip0.children[0].innerHTML="展開";
             };
+        };
+
+        if(defNum==1){
+            dataIframe.src='';
+            dataIframe.src="./data.html";
         };
     };
