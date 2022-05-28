@@ -3,29 +3,54 @@
 
 <head>
     <link rel="stylesheet" href="./style.css">
-     
 </head>
 
+
     <body>
-・<span id="block_" class="onmouse">block</span><br><div class="smallCommandBox">&ThinSpace;&lt;if <span class="or">|</span> unless&gt; &lt; block&gt; &lt;x y z&gt;</div><br>指定した座標のブロックとブロックが一致している(unlessの場合一致していない)時にコマンドを実行します。<br><br><br>
-・<sapn id="blocks_" class="onmouse">blocks</sapn><br><div class="commandBox">&ThinSpace;&lt;if <span class="or">|</span> unless&gt; &lt; blocks&gt; &lt;x y z(始点)&gt; &lt;x y z(終点)&gt; &lt;x y z(比較先)&gt; &lt;<span id="_all">all</span> <span class="or">|</span> <span id="_masked">masked</span>&gt;</div><br><span class="space">　　・</span><span id="all_">all</span><br><span class="space">　　　　</span>範囲内のすべてのブロックを比較する。<br><span class="space">　　・</span><span id="masked_">masked</span><br>　　　　範囲内の空気ブロックは無視してひかくする。<br><br><br>
 
-<!--data-->
-・<span id="data_" class="onmouse">data</span>[ <span class="hoge">Java Edition限定?</span> ]<span class="ver">(ver1.14で追加)</span><br>
-    <div class="commandBox">&ThinSpace;&lt;if <span class="or">|</span> unless> data &lt;<span id="_data_block">block</span> <span class="or">|</span> <sapn id="_data_entity">entity</sapn> <span class="or">|</span> <span id="_data_storage">storage</span>&gt; &lt;データタグの種類&gt;</div>
-        <br>指定したブロック、エンティティ、ストレージ(ver1.15以降)が指定したデータタグを持っている(unlessの場合持っていない)時にコマンドを実行します。<br><br>
 
-    <span class="space">　　</span>・<span id="data_entity_" class="onmouse">entity</span><br><span class="space">　　　　</span><div class="smallCommandBox">&ThinSpace;entity &lt;セレクタ&gt;</div><br><span class="space">　　　　</span>エンティティを指定します。<br>
-    <span class="space">　　</span>・<span id="data_block_" class="onmouse">block</span><br><span class="space">　　　　</span><div class="smallCommandBox">&ThinSpace;block &lt;x&gt; &lt;y&gt; &lt;z&gt;</div><br><span class="space">　　　　</span>ブロックエンティティを指定します。<br>
-    <span class="space">　　</span>・<span id="data_storage_" class="onmosue">storage</span><span class="ver">(ver1.15で追加)</span><br><span class="space">　　　　</span><div class="smallCommandBox">&ThinSpace;storage &lt;ストレージ名&gt;</div><br><span class="space">　　　　</span>ストレージ(タグを一時的に保存しておく場所)を指定します。ストレージ名は任意の文字列が使えます。<br><br>
 
-    <div id="zip0">データタグの種類[ <a href="javascript:def(0);">展開</a> ]
-        <p hidden>データタグの種類<br>AでタグAを選択します。<br>{}でデータタグ全体を選択します。<br>{A:x}でタグA:xが含まれている場合に限りデータタグ全体を選択します。<br>A{}でCompound型のタグAを選択します。<br>A{B:x}でタグB:xを含むCompound型のタグAを選択します。<br>A[]でList型のタグAのすべての要素を選択します。<br>A[x]でList型のタグAの(x+1)番目の要素を選択します。<br>A[{}]でList型のタグAに含まれる{}で区切られた要素をすべて選択します。<br>A[{B:x}]でList型のタグAに含まれる{}で区切られた要素のうちタグB:xを含むものを選択します。<br>A.BでCompound型のタグAに含まれるタグBを選択します。</p>
-</div><br><br>
 
-<!--entity-->
-・<span id="entity_" class="onmouse">entity</span><br><div class="smallCommandBox"><if|unless>&ThinSpace;entity &lt;エンティティ&gt;</div>
-</body>
+
+
+
+
+
+
+
+        ・<span id="block_" class="onmouse">block</span><br><div class="smallCommandBox">&ThinSpace;&lt;if <span class="or">|</span> unless&gt; &lt; block&gt; &lt;x y z&gt;</div><br>指定した座標のブロックとブロックが一致している(unlessの場合一致していない)時にコマンドを実行します。<br><br><br>
+        ・<sapn id="blocks_" class="onmouse">blocks</sapn><br><div class="commandBox">&ThinSpace;&lt;if <span class="or">|</span> unless&gt; &lt; blocks&gt; &lt;x y z(始点)&gt; &lt;x y z(終点)&gt; &lt;x y z(比較先)&gt; &lt;<span id="_all">all</span> <span class="or">|</span> <span id="_masked">masked</span>&gt;</div><br><span class="space">　　・</span><span id="all_">all</span><br><span class="space">　　　　</span>範囲内のすべてのブロックを比較する。<br><span class="space">　　・</span><span id="masked_">masked</span><br>　　　　範囲内の空気ブロックは無視してひかくする。<br><br><br>
+
+        <!--data-->
+        ・<span id="data_" class="onmouse">data</span>[ <span class="hoge">Java Edition限定?</span> ]<span class="ver">(ver1.14で追加)</span><br>
+            <div class="commandBox">&ThinSpace;&lt;if <span class="or">|</span> unless> data &lt;<span id="_data_block">block</span> <span class="or">|</span> <sapn id="_data_entity">entity</sapn> <span class="or">|</span> <span id="_data_storage">storage</span>&gt; &lt;データタグの種類&gt;</div>
+                <br>指定したブロック、エンティティ、ストレージ(ver1.15以降)が指定したデータタグを持っている(unlessの場合持っていない)時にコマンドを実行します。<br><br>
+
+            <span class="space">　　</span>・<span id="data_entity_" class="onmouse">entity</span><br><span class="space">　　　　</span><div class="smallCommandBox">&ThinSpace;entity &lt;セレクタ&gt;</div><br><span class="space">　　　　</span>エンティティを指定します。<br>
+            <span class="space">　　</span>・<span id="data_block_" class="onmouse">block</span><br><span class="space">　　　　</span><div class="smallCommandBox">&ThinSpace;block &lt;x&gt; &lt;y&gt; &lt;z&gt;</div><br><span class="space">　　　　</span>ブロックエンティティを指定します。<br>
+            <span class="space">　　</span>・<span id="data_storage_" class="onmosue">storage</span><span class="ver">(ver1.15で追加)</span><br><span class="space">　　　　</span><div class="smallCommandBox">&ThinSpace;storage &lt;ストレージ名&gt;</div><br><span class="space">　　　　</span>ストレージ(タグを一時的に保存しておく場所)を指定します。ストレージ名は任意の文字列が使えます。<br><br>
+
+            <div id="zip0">データタグの種類[ <a href="javascript:def(0);">展開</a> ]
+                <p hidden>データタグの種類<br>AでタグAを選択します。<br>{}でデータタグ全体を選択します。<br>{A:x}でタグA:xが含まれている場合に限りデータタグ全体を選択します。<br>A{}でCompound型のタグAを選択します。<br>A{B:x}でタグB:xを含むCompound型のタグAを選択します。<br>A[]でList型のタグAのすべての要素を選択します。<br>A[x]でList型のタグAの(x+1)番目の要素を選択します。<br>A[{}]でList型のタグAに含まれる{}で区切られた要素をすべて選択します。<br>A[{B:x}]でList型のタグAに含まれる{}で区切られた要素のうちタグB:xを含むものを選択します。<br>A.BでCompound型のタグAに含まれるタグBを選択します。</p>
+        </div><br><br>
+
+        <!--entity-->
+        ・<span id="entity_" class="onmouse">entity</span><br><div class="smallCommandBox"><if|unless>&ThinSpace;entity &lt;エンティティ&gt;</div><br><br><br>
+    
+        ・<span id="predicate_">predicate</span><br>
+        <div class="smallCommandBox">&ThinSpace;&lt;if <span class="or">|</span> unless&gt; predicate &lt;名前空間:プレディケートの名前&gt;</div>
+
+    
+
+
+
+
+
+
+
+
+
+    </body>
 
 <script src="./script.js"></script>
 
