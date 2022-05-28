@@ -37,6 +37,10 @@ iframe{
     background-color: rgb(233, 233, 233);
     display: inline-block;
 }
+.customButton{
+    cursor: pointer;
+    user-select: none;
+}
 
 /*簡易的なもの*/
 .run{
