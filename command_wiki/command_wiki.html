@@ -36,7 +36,7 @@
 
                     <tr>
                         <td>positioned</td><td><div class="smallCommandBox">&ThinSpace;positioned &lt;x&gt; &lt;y&gt; &lt;z&gt;</div><br>指定した座標で実行<br>実行者<span class="run">-></span>変わらない<br>向き<span class="run">-></span>変わらない<br>実行位置<span class="run">-></span>変わる(positioned)<br><br><br>
-                                                <div class="smallCommandBox">&ThinSpace;positioned as &lt;セレクタ&gt;</div>実行者<span class="run">-></span>変わらない<br>向き<span class="run">-></span>変わらない<br>実行位置<span class="run">-></span>変わる(positioned)</td>
+                                                <div class="smallCommandBox">&ThinSpace;positioned as &lt;セレクタ&gt;</div><br>実行者<span class="run">-></span>変わらない<br>向き<span class="run">-></span>変わらない<br>実行位置<span class="run">-></span>変わる(positioned)</td>
                     </tr>
 
                     <tr>
@@ -73,7 +73,10 @@
                         <!--if unless-->
                         <td>if unless</td><td><div id="if_unless_command_box" class="smallCommandBox">&ThinSpace;if &lt;<span id="_block">block</span> <span class="or">|</span> <span id="_blocks">blocks</span> <span class="or">|</span> <span id="_data">data</span> <span class="or">|</span> <span id="_entity" class="onmouse">entity</span> <span class="or">|</span> predicate <span class="or">|</span> score&gt;</div><br><br>
 
-                        <iframe src="./data.html">
+                            <span id="data_iframe_reload" onclick="def(1);" title="フレームの再読み込みする" class="material-symbols-outlined customButton">
+                                refresh
+                                </span><br>
+                        <iframe src="./data.html" id="data_iframe">
                             ・<span id="block_" class="onmouse">block</span><br><div class="smallCommandBox">&ThinSpace;&lt;if <span class="or">|</span> unless&gt; &lt; block&gt; &lt;x y z&gt;</div><br>指定した座標のブロックとブロックが一致している(unlessの場合一致していない)時にコマンドを実行します。<br><br><br>
                             ・<sapn id="blocks_" class="onmouse">blocks</sapn><br><div class="commandBox">&ThinSpace;&lt;if <span class="or">|</span> unless&gt; &lt; blocks&gt; &lt;x y z(始点)&gt; &lt;x y z(終点)&gt; &lt;x y z(比較先)&gt; &lt;<span id="_all">all</span> <span class="or">|</span> <span id="_masked">masked</span>&gt;</div><br><span class="space">　　・</span><span id="all_">all</span><br><span class="space">　　　　</span>範囲内のすべてのブロックを比較する。<br><span class="space">　　・</span><span id="masked_">masked</span><br>　　　　範囲内の空気ブロックは無視してひかくする。<br><br><br>
                             
@@ -94,6 +97,8 @@
                             ・<span id="entity_" class="onmouse">entity</span><br><div class="smallCommandBox"><if|unless>&ThinSpace;entity &lt;エンティティ&gt;</div>
 
                             </iframe>
+
+
 
                             </td>
                     </tr>
