@@ -3,11 +3,16 @@
     src: url(./minecraftfont.ttf);
 }
 
+body{
+    background-color: white;
+    color: black;
+}
 
 iframe{
     height:600px;
     float: left;
     width: 100%;
+    border-color: rgb(0, 0, 0);
 }
 #execute_table td{
     padding: 15px;
@@ -41,6 +46,16 @@ iframe{
     cursor: pointer;
     user-select: none;
 }
+#a_table td:nth-child(1){
+    padding: 5px;
+    font-family: minecraftfont;
+    text-align: center;
+    color: rgb(66, 66, 66);
+}
+#a_table td:nth-child(2){
+    padding: 5px;
+    text-align: center;
+}
 
 /*簡易的なもの*/
 .run{
@@ -67,4 +82,9 @@ iframe{
 }
 .small{
     font-size: 12px;
+}
+.ne{
+    color: gray;
+    font-weight: bold;
+    font-family: minecraftfont;
 }
