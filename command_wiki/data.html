@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="./style.css">
+    <link id="_style" rel="stylesheet" href="./style.css">
 </head>
 
 
@@ -35,10 +35,32 @@
         </div><br><br>
 
         <!--entity-->
-        ・<span id="entity_" class="onmouse">entity</span><br><div class="smallCommandBox"><if|unless>&ThinSpace;entity &lt;エンティティ&gt;</div><br><br><br>
+        ・<span id="entity_" class="onmouse">entity</span><br><div class="smallCommandBox">&lt;if <span class="or">|</span> unless&gt;&ThinSpace;entity &lt;エンティティ&gt;</div><br>指定したエンティティが存在する(unlessの場合存在しない)時にコマンドを実行します。<br><br><br>
     
         ・<span id="predicate_">predicate</span><br>
-        <div class="smallCommandBox">&ThinSpace;&lt;if <span class="or">|</span> unless&gt; predicate &lt;名前空間:プレディケートの名前&gt;</div>
+        <div class="smallCommandBox">&ThinSpace;&lt;if <span class="or">|</span> unless&gt; predicate &lt;名前空間:プレディケートの名前&gt;</div><br>めんどくさいから後回し<br><br><br>
+
+
+        ・<span id="score_" class="onmouse">score</span><br><div class="commandBox">&lt;if <span class="or">|</span> unless&gt; score &lt;エンティティ&gt; &lt;スコア1&gt; &lt;<span class="ne"> <span id="_a_0" class="onmouse">&lt;</span> <span class="or">|</span> <span class="onmouse" id="_a_1">&lt;=</span> <span class="or">|</span> <span class="onmouse" id="_a_2">=</span> <span class="or">|</span> <span class="onmouse" id="_a_3">&gt;=</span>  <span class="or">|</span> <span class="onmouse" id="_a_4">&gt;</span></span> &gt; &lt;エンティティ&gt; &lt;スコア2&gt;</div><br>スコア同士を比較します。<br><br>
+        
+        <table border="1" cellspacing="0" id="a_table">
+            <tr>
+                <td id="a_0_">&lt;</td> <td>スコア1 &lt; スコア2</td>
+            </tr>
+            <tr>
+                <td id="a_1_">&lt;=</td> <td>スコア1 &lt;= スコア2</td>
+            </tr>
+            <tr>
+                <td id="a_2_">=</td> <td>スコア1 = スコア2</td>
+            </tr>
+            <tr>
+                <td id="a_3_">=&gt;</td><td>スコア1 &gt;= スコア2</td>
+            </tr>
+            <tr>
+                <td id="a_4_">&gt;</td> <td>スコア1 &gt; スコア2</td>
+            </tr>
+        </table>
+
 
     
 
