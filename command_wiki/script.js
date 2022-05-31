@@ -18,10 +18,29 @@ const data_ = document.getElementById('data_');
 const entity_ = document.getElementById('entity_');
 const _entity = document.getElementById('_entity');
 const dataCommandBox = document.getElementById('if_unless_command_box');
+const predicate_ = document.getElementById('predicate_');
+const _predicate = document.getElementById('_predicate');
+const score_ = document.getElementById('score_');
+const _score = document.getElementById('_score');
+
+const a_0_ = document.getElementById('a_0_');
+const a_1_ = document.getElementById('a_1_');
+const a_2_ = document.getElementById('a_2_');
+const a_3_ = document.getElementById('a_3_');
+const a_4_ = document.getElementById('a_4_');
+const _a_0 = document.getElementById('_a_0');
+const _a_1 = document.getElementById('_a_1');
+const _a_2 = document.getElementById('_a_2');
+const _a_3 = document.getElementById('_a_3');
+const _a_4 = document.getElementById('_a_4');
 
 const zips = document.getElementsByClassName('zip');
 const dataIframeReload = document.getElementById('data_iframe_reload');
 const dataIframe = document.getElementById('data_iframe');
+
+const colorMode = document.getElementById('color_mode');
+const Style = document.getElementById('style');
+const _Style = document.getElementById('_style');
 
 // イベント
 // select
@@ -83,7 +102,50 @@ entity_.onmouseover=(event)=>{
 entity_.onmouseout=()=>{
     window.parent._entity.style.backgroundColor = 'unset';
 };
+predicate_.onmouseover=()=>{
+    window.parent._predicate.style.backgroundColor = 'yellow';
+};
+predicate_.onmouseout=()=>{
+    window.parent._predicate.style.backgroundColor = 'unset';
+};
+score_.onmouseover=()=>{
+    window.parent._score.style.backgroundColor = 'yellow';
+};
+score_.onmouseout=()=>{
+    window.parent._score.style.backgroundColor = 'unset';
+};
 
+
+a_0_.onmouseover=()=>{
+    _a_0.style.backgroundColor = 'yellow';
+};
+a_0_.onmouseout=()=>{
+    _a_0.style.backgroundColor = 'unset';
+};
+a_1_.onmouseover=()=>{
+    _a_1.style.backgroundColor = 'yellow';
+};
+a_1_.onmouseout=()=>{
+    _a_1.style.backgroundColor = 'unset';
+};
+a_2_.onmouseover=()=>{
+    _a_2.style.backgroundColor = 'yellow';
+};
+a_2_.onmouseout=()=>{
+    _a_2.style.backgroundColor = 'unset';
+};
+a_3_.onmouseover=()=>{
+    _a_3.style.backgroundColor = 'yellow';
+};
+a_3_.onmouseout=()=>{
+    _a_3.style.backgroundColor = 'unset';
+};
+a_4_.onmouseover=()=>{
+    _a_4.style.backgroundColor = 'yellow';
+};
+a_4_.onmouseout=()=>{
+    _a_4.style.backgroundColor = 'unset';
+};
 
 
 
@@ -107,5 +169,17 @@ dataIframeReload.onclick=()=>{
         if(defNum==1){
             dataIframe.src='';
             dataIframe.src="./data.html";
+        };
+
+        if(defNum==2){
+            if(colorMode.innerHTML=='light_mode'){
+                colorMode.innerHTML="dark_mode";
+                Style.href='./dark_style.css';
+                dataIframe.innerHTML=String(dataIframe.innerHTML).replace(/style.css/g, 'dark_style.css');
+            }else{
+                colorMode.innerHTML="light_mode";
+                Style.href='./style.css';
+                dataIframe.innerHTML=String(dataIframe.innerHTML).replace(/dark_style.css/g, 'style.css');
+            }
         };
     };
