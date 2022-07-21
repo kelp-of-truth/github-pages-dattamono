@@ -1,0 +1,90 @@
+@font-face {
+    font-family: minecraftfont;
+    src: url(./minecraftfont.ttf);
+}
+
+body{
+    background-color: white;
+    color: black;
+}
+
+iframe{
+    height:600px;
+    float: left;
+    width: 100%;
+    border-color: rgb(0, 0, 0);
+}
+#execute_table td{
+    padding: 15px;
+}
+#execute_table td:nth-child(1){
+    text-align: center;
+    font-size: 18px;
+}
+
+.commandBox{
+    border: thick solid gray;
+    border-width: 1px;
+    width: 750px;
+    word-break: break-all;
+    border-radius: 3px;
+    background-color: rgb(233, 233, 233);
+    font-family: minecraftfont;
+    display: inline-block;
+}
+.smallCommandBox{
+    font-family: minecraftfont;
+    border: thick solid gray;
+    border-width: 1px;
+    width: 500px;
+    word-break: break-all;
+    border-radius: 3px;
+    background-color: rgb(233, 233, 233);
+    display: inline-block;
+}
+.customButton{
+    cursor: pointer;
+    user-select: none;
+}
+#a_table td:nth-child(1){
+    padding: 5px;
+    font-family: minecraftfont;
+    text-align: center;
+    color: rgb(66, 66, 66);
+}
+#a_table td:nth-child(2){
+    padding: 5px;
+    text-align: center;
+}
+
+/*簡易的なもの*/
+.run{
+    color: blue;
+}
+.or{
+    color: rgb(0, 42, 255);
+}
+.bold{
+    font-weight: bold;
+}
+.space{
+    user-select: none;
+}
+.onmouse{
+    cursor: text, pointer;
+}
+.hoge{
+    cursor: help;
+    color: blue;
+}
+.ver{
+    font-weight: bold;
+}
+.small{
+    font-size: 12px;
+}
+.ne{
+    color: gray;
+    font-weight: bold;
+    font-family: minecraftfont;
+}
