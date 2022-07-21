@@ -12,7 +12,9 @@ Nav.onmouseout=(e)=>{
 
 
 const mainFrame=document.getElementById('mainFrame');
-mainFrame.style.height=window.innerHeight-80+"px";
+setInterval(() => {
+    mainFrame.style.height=window.innerHeight-80+"px";
+}, 100);
 
 document.getElementById('mainPage').onclick=()=>{
     mainFrame.src="./main.html";
