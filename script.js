@@ -19,6 +19,11 @@ document.getElementById('mainPage').onclick=()=>{
     localStorage.setItem("page", 0);
 };
 
+document.getElementById('videos').onclick=()=>{
+    mainFrame.src="./videos.html";
+    localStorage.setItem('page', 1);
+};
+
 document.getElementById('sites').onclick=()=>{
     mainFrame.src="./sites.html";
     localStorage.setItem("page", 3);
@@ -42,6 +47,9 @@ window.onload=()=>{
         var page=localStorage.getItem("page");
         if(page==0){
             mainFrame.src="./main.html";
+        }else
+        if(page==1){
+            mainFrame.src="./videos.html";
         }else
         if(page==3){
             mainFrame.src="./sites.html";
