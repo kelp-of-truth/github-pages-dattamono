@@ -1,22 +1,55 @@
-<html>
-  <head>
-    <title>こんぶのweb</title>
-  </head>
-  
-  <body>
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <title>昆布カンパニーホームページ</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="./icon.png">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
     
-    <a href="https://github.com/kelp-of-truth/kelp-of-truth.github.io">source files</a><br>
-    <a href="#urls">一覧</a>
-    <hr>
-    
-    <h2>一覧</h2>
-    <ul id="urls">
-      <i>
-        ・<a href="./particle/particle.html">パーティクルコマンドID</a>
-      </i><br>
-      <i>
-        ・<a href="./command_wiki/command_wiki.html">コマンドWiki(制作途中)</a>
-      </i>
-    </ul>
-  </body>
+    <body>
+        
+        <header id="_header">
+            <img src="./img/logo.png" id="logo">
+            
+            <span id="nav">
+                
+                <span class="material-symbols-outlined">
+                    bookmark
+                    </span>
+
+                PAGES
+
+            <nav hidden>
+                <ul>
+                   <li><a id="mainPage">メインページ</a></li>
+                    <li><a id="videos">動画一覧</a></li>
+                    <li><a id="downloadLinks">ダウンロードリンク</a></li>
+                    <li><a id="sites">サイト</a></li>
+                </ul>
+            </nav>
+            </span>
+
+            <div id="rightArea">
+                <input type="search" id="searchBox"><input type="button" value="search" id="searchButton">
+            </div>
+
+        </header>
+
+        <iframe id="mainFrame" src="" style="height: 100%;width: 80%;border: 2px outset gray;"></iframe>
+
+
+
+
+
+        <nav id="rightNav">
+
+        </nav>
+
+    </body>
+
+    <script src="./script.js"></script>
+
 </html>
