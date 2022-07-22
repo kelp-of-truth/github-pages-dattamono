@@ -5,7 +5,7 @@
 
 
 :root{
-    --shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    --shadow: 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -19,7 +19,7 @@ body{
     background-color: rgb(182, 255, 182);
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    font-size: 1.1rem;
 }
 
 a{
@@ -74,6 +74,7 @@ header{
     padding-right: 10px;
     padding-left: 0px;
     z-index: 100;
+    top: 80px;
     left: 147px;
     background-color: white;
     border: 2px solid black;
@@ -108,6 +109,8 @@ header{
 
 main{
     background-color: rgb(182, 255, 182);
+    margin-left: 20px;
+    margin-bottom: 100px;
     /* border: 1px solid black;
     padding-top: 0px; */
 }
@@ -126,10 +129,18 @@ h1{
     transition: 500ms;
 }
 
+h2{
+    background: linear-gradient(rgb(0, 178, 0), white);
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    color: white;
+    text-shadow: var(--shadow);
+}
+
 main article{
-    font-size: 1.8em;
+    font-size: 1.5em;
     margin-left: 50px;
-    padding-bottom: 100px;
 }
 
 h1:hover{
@@ -150,8 +161,6 @@ main nav{
 }
 
 .coron{
-    margin-left: 0.5em;
-    margin-right: 0.5em;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -159,7 +168,15 @@ main nav{
 
 
 
-
 #rightNav{
     text-align: left;
+}
+
+summary{
+    cursor: pointer;
+}
+
+.largeBr{
+    height: 5rem;
+    width: max-content;
 }
