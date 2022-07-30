@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+
+
+html body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+
+
+
+h1{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 0.3rem solid orange;
+    border-radius: 0.3rem;
+    background: linear-gradient(rgb(185, 185, 185), white, rgb(255, 219, 152), rgb(234, 234, 234));
+    cursor: default;
+}
+
+
+main{
+    height: 540px;
+    width: 720px;
+
+    border: 5px outset rgb(192, 192, 192);
+
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+
+    padding: 0px;
+}
+#main{
+    height: 540px;
+    width: 720px;
+    overflow: scroll;
+    padding: 0px;
+}
+
+
+
+
+#topMenuBtns{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.btn{
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    border: 0.3rem ridge rgb(153, 153, 153);
+    border-radius: 0.5rem;
+    background: linear-gradient(rgba(175, 175, 175, 0.5), rgba(175, 175, 175, 0.5), rgba(255, 255, 255, 0.5), rgba(175, 175, 175, 0.5));
+}
