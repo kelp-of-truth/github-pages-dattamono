@@ -8,8 +8,8 @@ onmessage = function(e) {
 
 
 
-gameTypeDangeon.hidden=false;
-gameTypeClicker.hidden=true;
+gameTypeDangeon.hidden=true;
+gameTypeClicker.hidden=false;
 
 
 
