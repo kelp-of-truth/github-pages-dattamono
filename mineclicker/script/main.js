@@ -8,8 +8,7 @@ onmessage = function(e) {
 
 
 
-gameTypeDangeon.hidden=true;
-gameTypeClicker.hidden=false;
+
 
 
 
@@ -44,9 +43,7 @@ setInterval(() => {
 
 
 
-// ゲームタイプ
-const gameTypeClicker=document.getElementById('gameTypeClicker');
-const gameTypeDangeon=document.getElementById('gameTypeDangeon');
+
 
 
 
@@ -599,7 +596,7 @@ var selectedMenu = 0;
 // crafting
 menus[0] = 1;
 // smelting
-menus[1] = 0;
+menus[1] = 1;
 // enchanting
 menus[2] = 1;
 // shop
