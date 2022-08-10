@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mine Clicker</title>
+    <link rel="icon" href="./icon.webp">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style_clicker.css">
+    <link rel="stylesheet" href="./style_dangeon.css">
+</head>
+
+
+<body>
+
+    <!--カスタムコンテキスト-->
+    <div id="customContext" hidden>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="main">
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="badguy" hidden></a>
+
+    <div id="z">
+
+
+        <!--escape-->
+        <div id="esc" hidden>
+            <button id="continue" style="top: 100px;">Continue</button>
+            <button id="status" style="top: 155px;">Status</button>
+            <button id="settings" style="top: 210px;">Settings</button>
+            <button id="exit" style="top: 265px;">Save and exit</button>
+        </div>
+
+
+        <!--settings-->
+        <div id="settingsDiv" hidden>
+            <label>Auto save:</label><button>ON</button><br>
+            <label>Auto scroll:</label><button>ON</button>
+        </div>
+
+
+
+
+        <!--custom context-->
+        <!--<div id="cutomContext"></div>-->
+
+
+
+
+        <!--tooltip-->
+        <div id="toolTip" hidden></div>
+    </div>
+
+    <noscript id="nosc">Error</noscript>
+
+
+
+
+
+
+    <div id="grayback" style="background-color: rgba(0, 0, 0, 0.7);" hidden></div>
+
+    <div id="visibleArea">
+
+    <!--Clicker-->
+    <div id="gameTypeClicker">
+
+
+
+    <!--Menu-->
+    <div id="rightArea" hidden>
+
+
+
+
+
+
+
+        <div>
+            <label id="menuName">craft</label>
+            <img src="./img/button/left.png" class="changePage leftButton" id="pageLeft"> <img id="menuIcon" src="./img/menuIcons/craftingTable.webp"> <img src="./img/button/right.png" class="changePage rightButton" id="pageRight">
+        </div>
+
+
+
+
+
+        <!--crafting-->
+        <div id="craftingDiv" class="menuTop"></div>
+        <div class="menuTop" id="smeltingDiv"></div>
+        <div id="enchntingDiv" class="menuTop">
+
+
+
+            <div id="enchantInv">
+            </div>
+
+
+            <div id="enchatItemTile">
+                <img src="./img/textures/empty.webp" id="enchatItemTileImg">
+            </div>
+
+            <img src="./img/gui/enchating.webp" id="enchantButton">
+
+
+        </div>
+        <div id="shopDiv" class="menuTop">
+
+            <div class="shopItem">
+
+            </div>
+
+        </div>
+
+
+        <div id="bazaarDiv" class="menuTop">
+            <div id="mpGraph">
+                <div class="mpLine" style="position:absolute;background-color: black;width: 25px;height: 0px;margin-top: 300px;margin-left: 25px;z-index: 100;"></div>
+            </div>
+
+            <label style="font-size: 1.5em;padding-left:10px;color:rgb(255, 230, 0);text-shadow: 2px 2px black;">Market price</label>
+            <div id="marketPrice">
+                <div class="mpDiv" id="cloneParent" hidden>
+                    <img src="" alt="?" class="sellItemIcon">
+
+                    <div class="priceLabel">
+                        <label class="plSell">Sell price</label><label class="sellPrice"></label><label style="margin-left: 5px; color: var(--coin-color)">coins</label><br>
+                        <label class="plBuy">Buy price</label><label class="buyPrice"></label><label style="margin-left: 5px;color: var(--coin-color);">coins</label>
+                    </div>
+
+                    <div class="sellAndBuy">
+                        <button class="sellButton">Sell</button>
+                        <button class="buyButton">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!--Clicker-->
+    <div id="leftArea" hidden>
+
+
+        <!--coin count-->
+        <div id="coinCount">
+            <img src="./img/coin.png" class="countImg"><label id="coincountLabel">0.0</label><label style="color: var(--coin-color);text-shadow: var(--textshdow-black);">coins</label>
+        </div>
+
+
+        <div id="chatBox" hidden></div>
+        <div id="chatInputs" hidden>
+            <input type="text" id="playerChat" style="background-color: rgb(63, 63, 63);width: 70%; color: white;left: 5%;"><input type="color" value="#ffffff" id="playerChatColor" style="background-color: rgb(63, 63, 63);width: 20%;left: 76%;">
+        </div>
+
+
+        <!--type ore-->
+        <!-- <div id="inventoryOre">
+
+            <div id="cobbleStone">
+                <img src="./img/Cobblestone.webp" class="countImg"><label class="countLabel">0</label>
+            </div>
+
+            <div id="coal">
+                <img src="./img/coal.webp" class="countImg"><label class="countLabel">0</label>
+            </div>
+
+            <div id="iron">
+                <img src="./img/iron.webp" class="countImg"><label class="countLabel">0</label>
+            </div>
+
+            <div id="gold">
+                <img src="./img/gold.webp" class="countImg"><label class="countLabel">0</label>
+            </div>
+
+            <div id="copper">
+                <img src="./img/copper.webp" class="countImg"><label class="countLabel">0</label>
+            </div>
+
+            <div id="diamond">
+                <img src="./img/diamond.webp" class="countImg"><label class="countLabel">0</label>
+            </div>
+
+            <div id="redStoneDust">
+                <img src="./img/redStoneDust.webp" class="countImg"><label class="countLabel">0</label>
+            </div>
+
+            <div id="lapis">
+                <img src="./img/Lapis_Lazuli.webp" class="countImg"><label class="countLabel">0</label>
+            </div>
+
+            <div id="emerald">
+                <img src="./img/Emerald.webp" class="countImg"><label class="countLabel">0</label>
+            </div>
+
+            <div id="netherite">
+                <img src="./img/netherite.webp" class="countImg"><label class="countLabel">0</label>
+            </div>
+
+
+        </div> -->
+
+
+
+
+
+        <!--bigStone-->
+        <div id="clicker">
+            <img src="./img/bigStone.png" id="bigStone">
+            <label id="oreLife">10/10</label>
+        </div>
+
+        <div id="deleteDiv" hidden>
+            <input id="deleteNum" type="number" min="1" max="999" value="1"><br>
+            <button id="deleteDone">Done</button><button id="deleteCnacel">Cancel</button>
+        </div>
+
+        <div id="itemframe" hidden>
+            <img id="viewItem" alt="?" style="font-size: 5em;">
+            <div id="inf">
+                <button id="itemUse">Use</button><br>
+                <button id="itemDelete">Delete</button><br>
+            </div>
+
+        </div>
+
+        <!--inventory-->
+        <div id="invFrame" style="overflow: scroll; position: absolute;height: calc(162px);width: calc(486px);bottom: 0px;right: calc(0px);">
+            <div id="viewInventory" hidden style="overflow-y: scroll;"></div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Dangeon-->
+<div id="gameTypeDangeon">
+
+    <div id="dangeonInfo">
+        <label id="dangeonName">Quiet Graveyeard</label><br>
+        <label id="dangeonFloor">F1</label>
+    </div>
+
+
+    <div id="enemys">
+        <img src="./img/enemys/zombie.webp">
+        <img src="./img/enemys/zombie.webp">
+        <img src="./img/enemys/zombie.webp">
+    </div>
+
+
+    <div id="enemyInfo">
+        
+    </div>
+
+        
+    <img src="./img/cubes/cube1.webp" id="attackButton">
+        
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+<!--jQuery-->
+<script src="./jquery-3.6.0.min.js"></script>
+
+<script src="./script/loadDef.js"></script>
+
+<script src="./script/gamepad.js"></script>
+
+<script src="./script/customContext.js"></script>
+
+<script src="./script/playerData.js"></script>
+
+<script src="./script/chat.js"></script>
+
+<script src="./script/data.js"></script>
+
+<script src="./script/items.js"></script>
+<script src="./script/recipe_book.js"></script>
+<script src="./script/main.js"></script>
+<script src="./script/inventory.js"></script>
+<script src="./keyEvents.js"></script>
+<script src="./script/bazaar.js"></script>
+<script src="./script/marketPriceGraph.js"></script>
+<script src="./script/enchant.js"></script>
+<script src="./script/modifier.js"></script>
+
+<script src="./script/autoSave.js"></script>
+
+
+
+<!--イベント追加-->
+<script>
+    // left,rightボタン
+    const leftButton = document.getElementsByClassName('leftButton');
+    const rightButton = document.getElementsByClassName('rightButton');
+
+    for (let i = 0; i < leftButton.length; i++) {
+        leftButton[i].onmouseover = (e) => {
+            leftButton[i].src = "./img/button/leftHover.png";
+        }
+        leftButton[i].onmouseout = (e) => {
+            leftButton[i].src = "./img/button/left.png";
+        }
+    };
+
+    for (let i = 0; i < rightButton.length; i++) {
+        rightButton[i].onmouseover = (e) => {
+            rightButton[i].src = "./img/button/rightHover.png";
+        }
+        rightButton[i].onmouseout = (e) => {
+            rightButton[i].src = "./img/button/right.png";
+        }
+    };
+</script>
+
+
+
+
+
+
+
+</html>

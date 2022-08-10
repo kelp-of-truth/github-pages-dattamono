@@ -1,0 +1,58 @@
+@font-face {
+    font-family: mc-ten;
+    src: url(./minecraft-ten.ttf);
+}
+
+
+#gameTypeDangeon{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(169, 169, 169);
+    background-image: url(./img/backgrounds/dangeon.jpeg);
+}
+
+#dangeonInfo{
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+#dangeonName{
+    font-family: mc-ten;
+    color: white;
+    font-size: 2rem;
+}
+#dangeonFloor{
+    font-family: mc-ten;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#attackButton{
+    position: absolute;
+    bottom: 40px;
+    right: 0px;
+    left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 128px;
+    width: 128px;
+    image-rendering: pixelated;
+}
+
+
+#enemys{
+    text-align: center;
+}
+#enemys img{
+    height: 256px;
+    margin-left: 48px;
+    margin-right: 48px;
+    margin-top: 48px;
+}

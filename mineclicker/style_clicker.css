@@ -1,0 +1,737 @@
+@font-face {
+    font-family: minecraftfont;
+    src: url(./minecraftfont.eot), url(./minecraftfont.ttf), url(./minecraftfont.woff);
+}
+
+* {
+    font-family: minecraftfont;
+    cursor: default;
+    font-size: 16px;
+    /* image-rendering: pixelated; */
+}
+
+::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+    display: none;
+}
+
+:root {
+    --coin-color: rgb(255, 247, 0);
+}
+
+:root {
+    --textshdow-black: 1px 1px black;
+}
+
+body {
+    background-color: white;
+}
+
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+label {
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+br {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#main button {
+    background-image: url(./img/button/default.png);
+    background-size: cover;
+    /*border: solid rgb(59, 59, 59);
+    border-width: 2px;*/
+    color: white;
+    user-select: none;
+    border: solid rgba(0, 0, 0, 0.182);
+    border-width: 3px;
+    outline: none;
+}
+
+input {
+    outline: none;
+}
+
+#main button:hover {
+    border: solid white;
+    border-width: 3px;
+}
+
+#customContext {
+    height: fit-content;
+    width: fit-content;
+    background-color: black;
+    border: solid rgb(49, 49, 49);
+}
+
+#customContext input[type="button"] {
+    width: fit-content;
+    height: 1.5rem;
+    background-color: black;
+    border: solid rbg(49, 49, 49);
+}
+
+#nosc {
+    position: absolute;
+    font-size: 100px;
+    color: red;
+    text-shadow: 5px 5px black;
+    padding: 100px;
+}
+
+#z {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: unset;
+}
+
+
+/*esc*/
+
+#esc {
+    z-index: 10000;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#esc button {
+    font-size: 25px;
+    position: absolute;
+    padding: 5px 10px 10px 10px;
+    border-width: 2px;
+    height: 2em;
+    width: 30%;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+#grayback {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 9000;
+}
+
+#settingsDiv {
+    position: absolute;
+    height: calc(100% - 48px);
+    width: calc(100% - 32px);
+    border-style: solid;
+    border-image: url(./img/gui/settingsFrame.webp) 32;
+    border-top-width: 16px;
+    border-bottom-width: 32px;
+    border-left-width: 16px;
+    border-right-width: 16px;
+    z-index: 1000000000;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(122, 122, 122);
+    overflow: scroll;
+    text-align: center;
+    color: white;
+}
+
+#settingsDiv * {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*tooltip*/
+
+
+/*#toolTip{
+    position: absolute;
+
+    border: solid rgb(27, 12, 27);
+    border-width: 3px;
+    height: 100px; 
+    width: 100px;
+    z-index: 999;
+}*/
+
+#toolTip {
+    color: white;
+    text-shadow: 2px 2px rgb(79, 79, 79);
+    position: absolute;
+    z-index: 100000;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(27, 12, 27);
+    border: solid rgb(45, 10, 99);
+    outline: solid rgb(27, 12, 27);
+    outline-offset: none;
+    border-width: 2px;
+    pointer-events: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 6px;
+    padding-bottom: 8px;
+    white-space: nowrap;
+    font-size: 16px;
+}
+
+
+/*Menu*/
+
+#rightArea {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 50%;
+    background-image: url(./img/rightArea/white.png);
+    z-index: 0;
+}
+
+
+/*Clicker*/
+
+#leftArea {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 50%;
+    background-color: rgb(158, 158, 158);
+    z-index: 1;
+    /*overflow: scroll;*/
+}
+
+#chatBox {
+    position: absolute;
+    left: 0px;
+    bottom: calc(0px + 3em);
+    z-index: 200;
+    border-top: solid rgb(60, 60, 60);
+    background-color: rgba(77, 77, 77, 0.654);
+    width: 100%;
+    color: white;
+    overflow: scroll;
+    vertical-align: top;
+    user-select: inherit;
+    transition: ease-out 500ms;
+    height: 0%;
+}
+
+#chatBox span {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    z-index: 201;
+}
+
+#chatBox br {
+    user-select: none;
+}
+
+#chatInputs {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 3em;
+    z-index: 204;
+    background-color: rgb(68, 68, 68);
+    opacity: 1;
+    transition: 800ms;
+}
+
+#chatInputs input {
+    position: absolute;
+    bottom: 0.5em;
+    z-index: 205;
+}
+
+
+/*bigStone*/
+
+#bigStone {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+#oreLife {
+    position: absolute;
+    top: 0px;
+    bottom: 350px;
+    left: 0px;
+    right: 0px;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+#viewInventory {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 0px;
+    width: 486px;
+    z-index: 100;
+}
+
+#itemframe {
+    position: absolute;
+    z-index: 100;
+    bottom: 0px;
+    left: 0px;
+    background-image: url(./img/gui/viewItem.webp) 4px 4px;
+    background-repeat: repeat;
+    height: calc(162px - 6px);
+    width: calc(100% - 486px - 6px);
+    overflow: scroll;
+    text-align: center;
+    border-style: solid;
+    border-image: url(./img/gui/viewItem.webp) 3;
+    border-width: 3px;
+    border-radius: 2px;
+}
+
+#itemframe button {
+    width: 80%;
+}
+
+#viewItem {
+    position: static;
+    z-index: 101;
+    width: auto;
+    height: 60%;
+    margin-top: 10px;
+    transition: 4s;
+}
+
+#itemframe #inf {
+    padding: 20px;
+}
+
+#itemframe #inf textarea {
+    width: calc(100% - 40px);
+    white-space: nowrap;
+}
+
+#deleteDiv {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: fit-content;
+    width: fit-content;
+    z-index: 104;
+    background-color: rgba(174, 174, 174, 0.507);
+    text-align: center;
+    border: solid white;
+    border-width: 3px;
+    border-radius: 0px;
+    padding: 10px;
+}
+
+#deleteNum {
+    height: 1.2em;
+    width: 4em;
+    z-index: 105;
+    background-image: url(./img/button/default.png);
+    color: white;
+    border: solid white;
+    border-radius: 0px;
+    border-width: 1px;
+}
+
+.inventoryTile {
+    position: absolute;
+    padding: 10px;
+    background-image: url(./img/gui/inventoryTile.webp);
+    height: 34px;
+    width: 34px;
+    background-repeat: none;
+}
+
+.inventoryItemCount {
+    position: absolute;
+    color: white;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 25px;
+    margin-bottom: 2px;
+    pointer-events: none;
+}
+
+:root{
+    --text-shadow-white: 0.7px 0.7px rgb(255, 255, 255), 0.7px -0.7px white, -0.7px -0.7px white, -0.7px 0.7px white;
+}
+
+.modifierSpan{
+    text-shadow: var(--text-shadow-white);
+}
+
+.getEffect {
+    color: white;
+    position: absolute;
+    left: 0px;
+    pointer-events: none;
+}
+
+.clickEffect {
+    transition: 799ms ease-out;
+    margin-left: 0px;
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    pointer-events: none;
+    z-index: 1;
+    image-rendering: auto;
+}
+
+#inventoryOre {
+    position: absolute;
+    left: 0.5rem;
+}
+
+.countImg {
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+#coincountLabel {
+    margin-left: 2rem;
+    white-space: nowrap;
+}
+
+#coinCount {
+    top: 0px;
+    left: 0px;
+    height: 95%;
+    width: 25%;
+}
+
+#coinCount label {
+    top: 0px;
+    font-size: 2rem;
+    left: 2.4rem;
+}
+
+#coinCount img {
+    height: 2rem;
+    width: 2rem;
+    top: 0.5rem;
+}
+
+#inventoryOre #cobbleStone {
+    position: absolute;
+    top: 3rem;
+    height: fit-content;
+    width: fit-content;
+    overflow: visible;
+}
+
+#inventoryOre #coal {
+    position: absolute;
+    top: 5rem;
+}
+
+#inventoryOre #iron {
+    position: absolute;
+    top: 7rem;
+}
+
+#inventoryOre #gold {
+    position: absolute;
+    top: 9rem;
+}
+
+#inventoryOre #copper {
+    position: absolute;
+    top: 11rem;
+}
+
+#inventoryOre #diamond {
+    position: absolute;
+    top: 13rem;
+}
+
+#inventoryOre #redStoneDust {
+    position: absolute;
+    top: 15rem;
+}
+
+#inventoryOre #lapis {
+    position: absolute;
+    top: 17rem;
+}
+
+#inventoryOre #emerald {
+    position: absolute;
+    top: 19rem;
+}
+
+#inventoryOre #netherite {
+    position: absolute;
+    top: 21rem;
+}
+
+.luckyChest {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    opacity: 1;
+}
+
+
+/*menu rightArea*/
+
+#menuIcon {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-image: url(./img/menuIcons/backImg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 10px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 40px;
+    margin: auto;
+    /*filter: grayscale(100%);*/
+}
+
+.changePage {
+    position: absolute;
+    font-size: 25px;
+    height: 50px;
+    border-radius: 1px;
+    width: 1.4em;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 50px;
+    margin: auto;
+}
+
+#pageLeft {
+    right: 120px;
+}
+
+#pageRight {
+    left: 120px;
+}
+
+#menuName {
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    font-size: 25px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 8px;
+    margin: auto;
+}
+
+.menuTop {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid gray;
+    height: calc(100% - 70px - 25px - 50px);
+    width: 540px;
+    top: calc(70px + 25px + 20px);
+    overflow: scroll;
+}
+
+#craftingDiv {
+    width: 540px;
+}
+
+.recipeIcon {
+    position: absolute;
+    background-image: url(./img/menuUIs/backIcon.png);
+    height: 34px;
+    width: 34px;
+    padding: 10px;
+    background-repeat: no-repeat;
+}
+
+
+/*バザー*/
+
+#mpGraph {
+    width: calc(fit-content + 100%);
+    height: 300px;
+    background-color: white;
+    z-index: 50;
+    overflow-x: scroll;
+}
+
+#marketPrice {
+    width: calc(100% - 8px);
+    height: calc(100% - 300px - 1.5em - 12px);
+    text-align: center;
+    border-style: solid;
+    border-image: url(./img/gui/viewItem.webp) 3;
+    border-width: 3px;
+    border-radius: 2px;
+    background-color: rgb(209, 209, 209);
+    text-align: center;
+    overflow: scroll;
+}
+
+#marketPrice .mpDiv {
+    background-color: rgb(121, 121, 121);
+    border-style: solid;
+    border-image: url(./img/gui/viewItem.webp) 3;
+    border-width: 3px;
+    border-radius: 2px;
+    height: 5em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 80%;
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: left;
+    vertical-align: top;
+}
+
+#marketPrice .mpDiv .sellAndBuy {
+    float: right;
+    background-color: rgb(155, 155, 155);
+    border-style: solid;
+    border-image: url(./img/menuUIs/backIcon.png) 5;
+    border-width: 5px;
+    border-radius: 0px;
+    height: fit-content;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#marketPrice .mpDiv .sellAndBuy button {
+    border-width: 2px;
+    font-size: 16px;
+    height: 60%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+#marketPrice .mpDiv img {
+    height: 34px;
+    width: 34px;
+    padding: 10px;
+    margin-top: 15px;
+    background-image: url(./img/menuUIs/backIcon.png);
+    margin-left: 10px;
+    float: left;
+}
+
+.priceLabel {
+    height: fit-content;
+    width: fit-content;
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.plSell {
+    color: rgb(255, 200, 0);
+}
+
+.plBuy {
+    color: rgb(0, 255, 21);
+}
+
+.sellPrice {
+    color: white;
+    margin-left: 5px;
+}
+
+.buyPrice {
+    color: white;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+/* enchant */
+#enchantInv{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 486px;
+    height: 108px;
+    z-index: 100;
+    overflow: scroll;
+    background-color: rgb(155, 155, 155);
+
+    border-style: solid;
+    border-image: url(./img/menuUIs/backIcon.png) 5;
+    border-width: 5px;
+    border-radius: 0px;
+}
+
+#enchatItemTile img{
+    position: absolute;
+    padding: 10px;
+    background-image: url(./img/gui/inventoryTile.webp);
+    height: 34px;
+    width: 34px;
+    background-repeat: none;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 160px;
+
+    border-style: solid;
+    border-image: url(./img/menuUIs/backIcon.png) 4;
+    border-width: 5px;
+    border-radius: 0px;
+}
+
+#enchantButton{
+    position: absolute;
+    top: 230px;
+    height: 34px;
+    width: 34px;
+    padding: 10px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./img/menuUIs/backIcon.png);
+
+}
+
+
+
+
+.shopItem{
+    
+}

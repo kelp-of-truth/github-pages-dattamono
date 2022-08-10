@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+
+#customContext{
+    position: absolute;
+    background-color: rgb(56, 56, 56);
+    /* border: solid rgb(15, 15, 15); */
+    height: fit-content;
+    /* border-width: 1px; */
+    z-index: 100000000000000;
+    width: fit-content;
+}
+
+#customContext button{
+    color: white;
+    margin: 0px;
+    padding: 0.3rem;
+    background-color: rgb(56, 56, 56);
+    box-sizing: border-box;
+    border: 1mm ridge rgb(15, 15, 15);
+    border-width: 0.1rem;
+    font-size: 0.7rem;
+    transition: 100ms;
+    width: 15rem;
+    text-align: center;
+    pointer-events: fill;
+}
+
+#customContext button:hover{
+    background: rgb(92, 92, 92);
+    padding-right: 2rem;
+    
+}
