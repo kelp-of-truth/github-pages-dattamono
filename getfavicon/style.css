@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+html, body{
+    padding: 10px;
+}
+#output{
+    height: 64px;
+    width: 64px;
+}
+#inputPath{
+    width: 15em;
+    border-radius: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border: 1px solid black;
+}
+#inputSize{
+    width: 4em;
+    border-radius: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border: 1px solid black;
+}
+input[type="button"]{
+    border-radius: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+input[type="button"]:active{
+    background-color: black;
+    color: white;
+}
+
+#srcPath{
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    padding-left: 0.5em;
+    border: 1px solid black;
+}
+#srcPath:focus{
+    outline: 1px solid black;
+}
+#getPath{
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    outline: 0px;
+}

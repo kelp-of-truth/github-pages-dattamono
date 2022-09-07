@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Get favicon</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" href="https://github.com/kelp-of-truth/kelp-of-truth.github.io/blob/main/icon.png?raw=true">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p>
+            <table>
+                <tr><td><label>URL</label></td><td><input type="url" id="inputPath"></td></tr>
+                <tr><td><label>Size</label><td><input type="number" id="inputSize" value="64" step="16" min="16" max="256"><label>px</label></td></tr>
+            </table>
+            <input type="button" value="GET" id="input">
+        </p><br>
+        <img id="output" alt="favicon" src="https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&size=128&url="><br>
+        <input type="url" id="srcPath"><input type="button" value="COPY" id="getPath">
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./script.js"></script>
+</html>
