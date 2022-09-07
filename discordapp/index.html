@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Discord app for Safari</title>
+  </head>
+  <body>
+    <noscript>JavasScriptを有効にしてください。</noscript>
+    <p>ホーム画面に追加してください。</p>
+  </body>
+  <script>
+    window.onload=()=>{
+      if(localStorage.getItem("visited")==true){
+        window.href="https://discord.com/app/";
+      }else{
+        localStorage.setItem("visited", true);
+      };
+    };
+  </script>
+</html>
