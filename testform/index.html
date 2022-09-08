@@ -1,6 +1,16 @@
-<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfeTOjDAu_gVQVAYkqjEsuuw9fmaZSROi92bmTE9nhkp0X5Hw/formResponse" method="POST">
+<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfeTOjDAu_gVQVAYkqjEsuuw9fmaZSROi92bmTE9nhkp0X5Hw/formResponse" method="POST"    target="hidden_iframe" onsubmit="submitted=true;">
 
-<textarea type="text" name="entry.1903735452"></textarea>
+<textarea type="text" name="entry.1903735452"></textarea><br>
 <input type="submit">
 
 </form>
+
+<script type="text/javascript">
+    let submitted = false;
+</script>
+<iframe
+    name="hidden_iframe"
+    id="hidden_iframe"
+    style="display: none"
+    onload="if(submitted){window.location='./thanks.html';}"
+></iframe>
