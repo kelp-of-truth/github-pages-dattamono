@@ -4,7 +4,6 @@
 html, body{
     padding: 0px;
     margin: 0px;
-    overflow-x: hidden;
 }
 html, body, input, textarea, button{
     font-family: "PT Sans", sans-serif;
