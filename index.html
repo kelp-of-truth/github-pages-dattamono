@@ -12,6 +12,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
+
+        <!--Safari-->
+        <meta name="viewport" content="width=device-width" />
     </head>
     <body>
         <header>
@@ -82,7 +85,7 @@
             <!--Form-->
             <hr>
             <span style="text-align: center;font-size: 2rem;display: block;">Contact</span><br><br>
-            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc_SPZJgPyEvLwq6lmvexpr06qj-jhM6LGU1N-WYv2wDaRWnA/formResponse?embedded=true" id="contact" class="contact" onsubmit="alert('a');location.reload();">
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc_SPZJgPyEvLwq6lmvexpr06qj-jhM6LGU1N-WYv2wDaRWnA/formResponse?embedded=true" id="contact" method="POST" target="hidden_iframe" class="contact" onsubmit="submitte=true;">
                 <label><input type="text" placeholder="Name" name="entry.1513739824"></label><br><br>
                 <label><textarea class="content" placeholder="Content" name="entry.1279518855"></textarea></label><br>
                 <input type="submit" value="送信">
@@ -90,6 +93,18 @@
 
 
         </main>
+
+        <script type="text/javascript">
+            let submitted = false;
+        </script>
+        <iframe
+            name="hidden_iframe"
+            id="hidden_iframe"
+            style="display: none"
+            onload="if(submitted){window.location='https://kelp-of-truth.github.io/#contact';}"
+        ></iframe>
+
+
     </body>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="./script.js"></script>
