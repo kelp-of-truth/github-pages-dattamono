@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+
+html, body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+html, body, input, textarea, button{
+    font-family: "PT Sans", sans-serif;
+}
+body{
+    padding-bottom: 5rem;
+}
+header {
+    height: 6rem;
+    background-color: rgba(247, 247, 247, 0.904);
+    color: rgb(84, 84, 84);
+    font-family: "PT Sans", sans-serif;
+    box-shadow:
+    0 0.1px 2.5px rgba(0, 0, 0, 0.449),
+    0 0.15px 6.1px rgba(0, 0, 0, 0.318),
+    0 0.4px 11.4px rgba(0, 0, 0, 0.086),
+    0 1.7px 19.8px rgba(0, 0, 0, 0.092),
+    0 1.1px 34.8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    /* display: flex; */
+    justify-content: space-between;
+    z-index: 1000;
+    width: 100%;
+    top: 0px;
+}
+header .myName{
+    margin-top: 0.3em;
+    color: rgb(0, 84, 0);
+    font-size: 2rem;
+    font-weight: 650;
+    text-align: center;
+    display: block;
+    text-decoration: underline;
+    cursor: default;
+}
+header nav{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+header a{
+    /* color: white; */
+    color: rgb(84, 84, 84);
+    margin-bottom: 0.3rem;
+    margin-top: 0.7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    transition: 100ms;
+    font-size: 1.2rem;
+}
+header a:hover{
+    color: rgb(65, 65, 65);
+}
+
+main{
+    margin-top: 10rem;
+    font-family: 'Kosugi', sans-serif;
+    font-size: 1.3rem;
+}
+main h1{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 3rem;
+    border-bottom: 0.05em solid black;
+}
+main h2{
+    font-size: 2rem;
+    border-left: 0.3em solid rgb(78, 78, 78);
+    padding-left: 0.3em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    transition: 500ms;
+}
+main .point{
+    font-size: 0.9rem;
+}
+main a{
+    color: rgb(63, 63, 63);
+}
+main a:hover{
+    color: rgb(82, 82, 82);
+}
+main h2:hover{
+    border-left: 0.2em solid rgb(78, 78, 78);
+}
+
+#top{
+    text-align: center;
+    height: 30rem;
+    box-sizing: border-box;
+}
+#top .icon{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
+#top .name{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3rem;
+    height: fit-content;
+    width: fit-content;
+    color: white;
+    text-shadow: 0.07em 0px rgba(0, 0, 0, 0.603)
+}
+#top .profile_content{
+    width: 30rem;
+    height: fit-content;
+    text-align: center;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 1rem;
+}
+
+#topBackground img{
+    position: absolute;
+    height: 30rem;
+    width: 100%;
+    left: 0px;
+    top: 6rem;
+    z-index: -10;
+    object-fit: cover;
+    filter: blur(5px);
+}
+
+#main{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+}
+.snsIcon{
+    height: 1rem;
+    width: 1rem;
+}
+#snsLinks table td{
+    padding: 0.1rem;
+}
+#snsLinks table td a{
+    cursor: pointer;
+}
+
+.contact{
+    text-align: center;
+    margin-left: 2rem;
+}
+.contact .content{
+    resize: none;
+    height: 5.7rem;
+    width: 20rem;
+    margin-bottom: 6.3rem;
+}
+.contact label{
+    text-align: left;
+    display: inline-block;
+}
+.contact input, .contact textarea{
+    transition: 150ms;
+    border: 1px solid rgb(99, 99, 99);
+    box-sizing: border-box;
+    padding: 2px;
+    border-radius: 0.1rem;
+}
+.contact input[type="text"]:focus{
+    border-bottom: 2px solid black;
+    outline: none;
+    padding-bottom: 1px;
+}
+.contact input[type="submit"]{
+    width: 8rem;
+    text-align: center;
+    background-color: rgb(0, 110, 255);
+    color: white;
+}
+.contact textarea:focus{
+    height: 12rem;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    padding-right: 1px;
+    padding-left: 1px;
+    outline: none;
+    margin-bottom: 0px;
+}
