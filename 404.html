@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>404 Not found</title>
+        <title>404 not found</title>
         <link rel="./icon.webp">
         <meta charset="utf-8">
+        <link rel="stylesheet" href="./404.css">
     </head>
     <body>
         <div style="text-align: center;">
             <h1>404 NOT FOUND</h1>
-            <a style="color: black;" href="https://kelp-of-truth.github.io">メインページ</a>
+            <a style="color: black;" href="https://kelp-of-truth.github.io">メインページ</a><br><br>
+            <div id="searchPage">
+                <input type="search">
+                <input type="button" value="検索" class="searchBtn">
+            </div>
             <div style="height: 10rem;"></div>
             <label>フォームを送信する</label>
             <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd_LCanQL-eIOl8pwk5Thh0NEUZ-1mTrPttG9DblmWNH0v_Dg/formResponse" method="POST">
                 <textarea name="entry.1624351693" style="height: 10rem;width: 20rem;resize: none;"></textarea><br>
-                <input type="submit" value="送信">
+                <input type="submit" value="送信" class="submitForm">
             </form>
         </div>
     </body>
