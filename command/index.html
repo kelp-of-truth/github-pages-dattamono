@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>Command</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" href="./icon.webp">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="#what">コマンドとは</a>
+                <a href="#other">コマンドの他に</a>
+                <a href="#rel">コマンドとの関係性</a>
+                <a href="#thisBook">この書では</a>
+                <a href="#idOmoitukan">コマンドに関する必須知識</a>
+                <a href="#all">コマンド一覧</a>
+            </nav>
+        </header>
+        <input style="position: fixed;right: 1rem;top: 3.5rem;width: 4.5rem;border-radius: 0.2rem;background-color: white;" type="button" id="closeBtn" value="開く" onclick="if(document.getElementById('allNavFrame').hidden==false){document.getElementById('allNavFrame').hidden=true;document.getElementById('closeBtn').value='開く';}else{document.getElementById('allNavFrame').hidden=false;document.getElementById('closeBtn').value='閉じる';};">
+        <span id="allNavFrame" style="height: 10rem;width:fit-content;position: fixed;top: 5rem;right: 1rem;background-color: rgba(255, 255, 255, 0.908);color: black;border:2px solid rgb(57, 57, 57);" hidden>
+            
+            <div style="height: 10rem;width: fit-content;overflow-y: scroll;" id="allNav">
+                <!-- <input type="search" placeholder="検索" style="border-radius: 0px;border: 1px solid black;" id="commandsSearch"> -->
+                <table id="allNavTable">
+<tr class="navAll"><td><a href="#/ability">/ability</a></td></tr>
+<tr class="navAll"><td><a href="#/alwaysday">/alwaysday</a></td></tr>
+<tr class="navAll"><td><a href="#/camerashake">/camerashake</a></td></tr>
+<tr class="navAll"><td><a href="#/clear">/clear</a></td></tr>
+<tr class="navAll"><td><a href="#/clearspawnpoint">/clearspawnpoint</a></td></tr>
+<tr class="navAll"><td><a href="#/clone">/clone</a></td></tr>
+<tr class="navAll"><td><a href="#/connect">/connect</a></td></tr>
+<tr class="navAll"><td><a href="#/damage">/damage</a></td></tr>
+<tr class="navAll"><td><a href="#/daylock">/daylock</a></td></tr>
+<tr class="navAll"><td><a href="#/deop">/deop</a></td></tr>
+<tr class="navAll"><td><a href="#/dialogue">/dialogue</a></td></tr>
+<tr class="navAll"><td><a href="#/difficulty">/difficulty</a></td></tr>
+<tr class="navAll"><td><a href="#/effect">/effect</a></td></tr>
+<tr class="navAll"><td><a href="#/enchant">/enchant</a></td></tr>
+<tr class="navAll"><td><a href="#/event">/event</a></td></tr>
+<tr class="navAll"><td><a href="#/execute">/execute</a></td></tr>
+<tr class="navAll"><td><a href="#/fill">/fill</a></td></tr>
+<tr class="navAll"><td><a href="#/fog">/fog</a></td></tr>
+<tr class="navAll"><td><a href="#/function">/function</a></td></tr>
+<tr class="navAll"><td><a href="#/gamemode">/gamemode</a></td></tr>
+<tr class="navAll"><td><a href="#/gamerule">/gamerule</a></td></tr>
+<tr class="navAll"><td><a href="#/gametest">/gametest</a></td></tr>
+<tr class="navAll"><td><a href="#/give">/give</a></td></tr>
+<tr class="navAll"><td><a href="#/help">/help</a></td></tr>
+<tr class="navAll"><td><a href="#/immutableworld">/immutableworld</a></td></tr>
+<tr class="navAll"><td><a href="#/kick">/kick</a></td></tr>
+<tr class="navAll"><td><a href="#/kill">/kill</a></td></tr>
+<tr class="navAll"><td><a href="#/list">/list</a></td></tr>
+<tr class="navAll"><td><a href="#/locate">/locate</a></td></tr>
+<tr class="navAll"><td><a href="#/loot">/loot</a></td></tr>
+<tr class="navAll"><td><a href="#/me">/me</a></td></tr>
+<tr class="navAll"><td><a href="#/mobevent">/mobevent</a></td></tr>
+<tr class="navAll"><td><a href="#/msg">/msg</a></td></tr>
+<tr class="navAll"><td><a href="#/music">/music</a></td></tr>
+<tr class="navAll"><td><a href="#/op">/op</a></td></tr>
+<tr class="navAll"><td><a href="#/particle">/particle</a></td></tr>
+<tr class="navAll"><td><a href="#/playanimation">/playanimation</a></td></tr>
+<tr class="navAll"><td><a href="#/playsound">/playsound</a></td></tr>
+<tr class="navAll"><td><a href="#/reload">/reload</a></td></tr>
+<tr class="navAll"><td><a href="#/replaceitem">/replaceitem</a></td></tr>
+<tr class="navAll"><td><a href="#/ride">/ride</a></td></tr>
+<tr class="navAll"><td><a href="#/say">/say</a></td></tr>
+<tr class="navAll"><td><a href="#/schedule">/schedule</a></td></tr>
+<tr class="navAll"><td><a href="#/scoreboard">/scoreboard</a></td></tr>
+<tr class="navAll"><td><a href="#/script">/script</a></td></tr>
+<tr class="navAll"><td><a href="#/setblock">/setblock</a></td></tr>
+<tr class="navAll"><td><a href="#/setmaxplayers">/setmaxplayers</a></td></tr>
+<tr class="navAll"><td><a href="#/setworldspawn">/setworldspawn</a></td></tr>
+<tr class="navAll"><td><a href="#/spawnpoint">/spawnpoint</a></td></tr>
+<tr class="navAll"><td><a href="#/spreadplayers">/spreadplayers</a></td></tr>
+<tr class="navAll"><td><a href="#/stopsound">/stopsound</a></td></tr>
+<tr class="navAll"><td><a href="#/structure">/structure</a></td></tr>
+<tr class="navAll"><td><a href="#/summon">/summon</a></td></tr>
+<tr class="navAll"><td><a href="#/tag">/tag</a></td></tr>
+<tr class="navAll"><td><a href="#/teleport">/teleport</a></td></tr>
+<tr class="navAll"><td><a href="#/tell">/tell</a></td></tr>
+<tr class="navAll"><td><a href="#/tellraw">/tellraw</a></td></tr>
+<tr class="navAll"><td><a href="#/testfor">/testfor</a></td></tr>
+<tr class="navAll"><td><a href="#/testforblock">/testforblock</a></td></tr>
+<tr class="navAll"><td><a href="#/testforblocks">/testforblocks</a></td></tr>
+<tr class="navAll"><td><a href="#/tickingarea">/tickingarea</a></td></tr>
+<tr class="navAll"><td><a href="#/time">/time</a></td></tr>
+<tr class="navAll"><td><a href="#/title">/title</a></td></tr>
+<tr class="navAll"><td><a href="#/titleraw">/titleraw</a></td></tr>
+<tr class="navAll"><td><a href="#/toggledownfall">/toggledownfall</a></td></tr>
+<tr class="navAll"><td><a href="#/tp">/tp</a></td></tr>
+<tr class="navAll"><td><a href="#/w">/w</a></td></tr>
+<tr class="navAll"><td><a href="#/wb">/wb</a></td></tr>
+<tr class="navAll"><td><a href="#/weather">/weather</a></td></tr>
+<tr class="navAll"><td><a href="#/worldbuilder">/worldbuilder</a></td></tr>
+<tr class="navAll"><td><a href="#/wsserver">/wsserver</a></td></tr>
+<tr class="navAll"><td><a href="#/xp">/xp</a></td></tr>
+</table>
+            </div>
+            </span>
+
+
+        <h1 id="what">コマンドとは</h1>
+        <p>
+            　よく「おもしろいコマンドありますか？」と聞く人がいます。しかしそれは他の人が「おもしろい」と感じて
+            いるわけであり、実際に自分はおもしろいと思っていません。そこでコマンダーは大抵「/kill @s」と、答えます。コマンドとは何んなのでしょうか。コマンド
+            は自分のやりたいことをを実現させる 1 つの道具であり、便利にもなります。なので、何もわからずに、
+            youtube だけを見て<span style="text-decoration: line-through;">パクる</span>真似するだけでは、役割を果たせていません。自分が基礎から学ぶ必要性があります。
+        </p><br>
+        <h1 id="other">コマンドの他に．．．</h1>
+        <p>
+            　先程、「やりたいことを実現させる 1 つの道具」とありました。コマンド以外の道具を紹介します。
+            ビヘイビアーパック
+            BE で、右クリック検知などを実現する。主にコマンドと一緒に使う
+            データパック
+            Java で、コマンドを短縮したり、いろいろなことを追加したりできます。
+            アドオン/mod
+            アイテムを使いしたり、テクスチャを変更したりできます。
+        </p><br>
+        <h1 style="border-bottom: none;padding-left: 1em;">では、さっきから出ている、BE や java とは何んなんでしょうか</h1>
+        <P>
+            　6簡単に言うと、プレイしている環境です。
+            BE は bedrock edition 統合版の略です。（ごく一部で）+e（C++ eidtion）とも呼ばれています。+eって文字を見るとクッキーを思い出す．．．
+            主に、スマートフォン（ios）、ps4[5]、Switch、xbox、Windows などです。
+            特徴は、マルチプレイがしやすい点ですが、自由性はよくありません。Switchでマルチプレイをするにはニンテンドーオンライン（有料）に加入する必要があります。つまり、Switchは統合版の良さをつｂ（（（（<br>
+            Java は java edition の略です。
+            主に Windows、mac、 Linux などです。（Android にもありますが、非公式なのでここでは紹介しませ
+            ん）
+            特徴は、自由性の良さです。しかし、マルチプレイをするためにはサーバーを立てる必要があります。
+            CE console edition WiiU や psvita など更新が止まった家庭用ゲーム機の総称です。
+            EE education edition 主にスマホや Windows などの教育版マイクラのことで、agent や黒板が追加さ
+            れます。
+            PE Pocket edition スマホが統合版になる前のバージョンの名前です。スマホの初代マイクラです。
+        </P><br>
+        <h1 id="rel">コマンドとの関係性</h1>
+        <p>
+            機種はコマンドと関係ないじゃないか！と思っているそこのあなた（あたなたですよ！）。関係あります！まずコマンドが使え
+            るのは、java と BE だけですが、どんな違いがあるのかを見ていきましょう。
+            <ul>
+                <li>BE 版</li>
+                <span style="margin-left: 1rem;">BE 版では、簡単なコマンドが全てできます。（は？）</span><br>
+                <span style="margin-left: 2rem;">例 execute、effect、summon などなど…</span>
+                <li>Java 版</li>
+                <span style="margin-left: 1rem;">Java 版では、BE のさらに上のコマンドが追加されます。</span><br>
+                <span style="margin-left: 2rem;">例 data、motion、bossbar などなど…</span>
+            </ul>
+                元々、java 版が本家なので、java 版の方が全てにおいて自由性が効きます。
+        </p><br>
+        <h1 id="thisBook">この書では．．．</h1>
+        <p>
+            この書では、主に BE を扱っていきます。Java のコマンドに挑戦する人も、be が基本の形<span style="text-decoration: line-through;">（これ見てる人全員BEだろ？）</span>です
+            ので、まずはそちらから試してみた方がいいと思います。（Javaの人はYoutubeで良さげなのさがしてってこと）
+        </p>
+        <h1 id="idOmoitukan">コマンドに関する必須知識</h1>
+        <p>
+            <h2>セレクター</h2>
+            <p>セレクターとは、@a や@s など、その entity を示すこものです。（entityって何って人は自分で調べて）</p><br>
+            <h2>座標</h2>
+            <p>
+                座標を指定する<br>
+                <span style="text-decoration:line-through;">20 4 36 X20Y4Z36 をち指定（は？）</span><br>
+                <span style="background-color: rgba(0, 0, 0, 0.673);color: white;margin-right: 2rem;padding: 0.2rem;">20 4 36</span>は、
+                <p style="background-color: white;display:inline-block;font-weight: 600;"><span style="color: blue;">X</span>:20,&ThinSpace;<span style="color: rgb(0, 255, 0);">Y</span>:4,&ThinSpace;<span style="color: red;">Z</span>:36</p><br>
+                といことです。
+            </p>
+            <h2>相対座標（~）</h2>
+            <p>
+                読み方は<span style="font-weight: 600;">”チルダ”</span>、です。<br>
+                <span style="text-decoration: line-through;">座標を移動させる</span>　座標を指定するってこと<br>
+                <p>~ ~5 ~ （be は空白はなくても ok→~~5~）</p>
+                実行場所から 5m 上を指定
+            </p>
+            <h2>ローカル座標（^）</h2>
+            <p>
+                読み方は<span style="font-weight: 600;">”キャレット”</span>
+                指定の entity の視点の先を+Z とする
+                <p>^ ^ ^5 （be のみ空白はなくても ok→^^^5）</p>
+                指定の entity 視点の五ブロック先を指定
+            </p>
+            <h2>引数</h2>
+            <p>
+                読み方は<span style="font-weight: 600;">”ひきすう”</span>です。<span style="font-weight: 600;">”いんすう”</span>じゃありません。いんすうと言うと<span style="font-weight: 600;">”因数”</span>になります。<br>
+                セレクターの後につく、[ ]のこと。その entity をさらに絞れる。
+                <p>
+                    @e[type=zombie] ゾンビだけ<br>
+                    @a[tag=time] time という tag がついたプレイヤーのみ
+                </p>
+            </p>
+        </p><br>
+        <h1 id="all">最後にコマンド一覧（参考程度に）</h1>
+        <p style="line-height: 2em;">
+            オープンチャットでこれらのコマンドを送ると詳しい説明が返ってきます。ぜひ試してみてください。<br><br>
+            クリックでコピーできます！<br>
+        <span style="cursor: pointer;" id="/ability" onclick="navigator.clipboard.writeText('/ability');">/ability</span><br>
+        <span style="cursor: pointer;" id="/alwaysday" onclick="navigator.clipboard.writeText('/alwaysday');">/alwaysday</span><br>
+        <span style="cursor: pointer;" id="/camerashake" onclick="navigator.clipboard.writeText('/camerashake');">/camerashake</span><br>
+        <span style="cursor: pointer;" id="/clear" onclick="navigator.clipboard.writeText('/clear');">/clear</span><br>
+        <span style="cursor: pointer;" id="/clearspawnpoint" onclick="navigator.clipboard.writeText('/clearspawnpoint');">/clearspawnpoint</span><br>
+        <span style="cursor: pointer;" id="/clone" onclick="navigator.clipboard.writeText('/clone');">/clone</span><br>
+        <span style="cursor: pointer;" id="/connect" onclick="navigator.clipboard.writeText('/connect');">/connect</span><br>
+        <span style="cursor: pointer;" id="/damage" onclick="navigator.clipboard.writeText('/damage');">/damage</span><br>
+        <span style="cursor: pointer;" id="/daylock" onclick="navigator.clipboard.writeText('/daylock');">/daylock</span><br>
+        <span style="cursor: pointer;" id="/deop" onclick="navigator.clipboard.writeText('/deop');">/deop</span><br>
+        <span style="cursor: pointer;" id="/dialogue" onclick="navigator.clipboard.writeText('/dialogue');">/dialogue</span><br>
+        <span style="cursor: pointer;" id="/difficulty" onclick="navigator.clipboard.writeText('/difficulty');">/difficulty</span><br>
+        <span style="cursor: pointer;" id="/effect" onclick="navigator.clipboard.writeText('/effect');">/effect</span><br>
+        <span style="cursor: pointer;" id="/enchant" onclick="navigator.clipboard.writeText('/enchant');">/enchant</span><br>
+        <span style="cursor: pointer;" id="/event" onclick="navigator.clipboard.writeText('/event');">/event</span><br>
+        <span style="cursor: pointer;" id="/execute" onclick="navigator.clipboard.writeText('/execute');">/execute</span><br>
+        <span style="cursor: pointer;" id="/fill" onclick="navigator.clipboard.writeText('/fill');">/fill</span><br>
+        <span style="cursor: pointer;" id="/fog" onclick="navigator.clipboard.writeText('/fog');">/fog</span><br>
+        <span style="cursor: pointer;" id="/function" onclick="navigator.clipboard.writeText('/function');">/function</span><br>
+        <span style="cursor: pointer;" id="/gamemode" onclick="navigator.clipboard.writeText('/gamemode');">/gamemode</span><br>
+        <span style="cursor: pointer;" id="/gamerule" onclick="navigator.clipboard.writeText('/gamerule');">/gamerule</span><br>
+        <span style="cursor: pointer;" id="/gametest" onclick="navigator.clipboard.writeText('/gametest');">/gametest</span><br>
+        <span style="cursor: pointer;" id="/give" onclick="navigator.clipboard.writeText('/give');">/give</span><br>
+        <span style="cursor: pointer;" id="/help" onclick="navigator.clipboard.writeText('/help');">/help</span><br>
+        <span style="cursor: pointer;" id="/immutableworld" onclick="navigator.clipboard.writeText('/immutableworld');">/immutableworld</span><br>
+        <span style="cursor: pointer;" id="/kick" onclick="navigator.clipboard.writeText('/kick');">/kick</span><br>
+        <span style="cursor: pointer;" id="/kill" onclick="navigator.clipboard.writeText('/kill');">/kill</span><br>
+        <span style="cursor: pointer;" id="/list" onclick="navigator.clipboard.writeText('/list');">/list</span><br>
+        <span style="cursor: pointer;" id="/locate" onclick="navigator.clipboard.writeText('/locate');">/locate</span><br>
+        <span style="cursor: pointer;" id="/loot" onclick="navigator.clipboard.writeText('/loot');">/loot</span><br>
+        <span style="cursor: pointer;" id="/me" onclick="navigator.clipboard.writeText('/me');">/me</span><br>
+        <span style="cursor: pointer;" id="/mobevent" onclick="navigator.clipboard.writeText('/mobevent');">/mobevent</span><br>
+        <span style="cursor: pointer;" id="/msg" onclick="navigator.clipboard.writeText('/msg');">/msg</span><br>
+        <span style="cursor: pointer;" id="/music" onclick="navigator.clipboard.writeText('/music');">/music</span><br>
+        <span style="cursor: pointer;" id="/op" onclick="navigator.clipboard.writeText('/op');">/op</span><br>
+        <span style="cursor: pointer;" id="/particle" onclick="navigator.clipboard.writeText('/particle');">/particle</span><br>
+        <span style="cursor: pointer;" id="/playanimation" onclick="navigator.clipboard.writeText('/playanimation');">/playanimation</span><br>
+        <span style="cursor: pointer;" id="/playsound" onclick="navigator.clipboard.writeText('/playsound');">/playsound</span><br>
+        <span style="cursor: pointer;" id="/reload" onclick="navigator.clipboard.writeText('/reload');">/reload</span><br>
+        <span style="cursor: pointer;" id="/replaceitem" onclick="navigator.clipboard.writeText('/replaceitem');">/replaceitem</span><br>
+        <span style="cursor: pointer;" id="/ride" onclick="navigator.clipboard.writeText('/ride');">/ride</span><br>
+        <span style="cursor: pointer;" id="/say" onclick="navigator.clipboard.writeText('/say');">/say</span><br>
+        <span style="cursor: pointer;" id="/schedule" onclick="navigator.clipboard.writeText('/schedule');">/schedule</span><br>
+        <span style="cursor: pointer;" id="/scoreboard" onclick="navigator.clipboard.writeText('/scoreboard');">/scoreboard</span><br>
+        <span style="cursor: pointer;" id="/script" onclick="navigator.clipboard.writeText('/script');">/script</span><br>
+        <span style="cursor: pointer;" id="/setblock" onclick="navigator.clipboard.writeText('/setblock');">/setblock</span><br>
+        <span style="cursor: pointer;" id="/setmaxplayers" onclick="navigator.clipboard.writeText('/setmaxplayers');">/setmaxplayers</span><br>
+        <span style="cursor: pointer;" id="/setworldspawn" onclick="navigator.clipboard.writeText('/setworldspawn');">/setworldspawn</span><br>
+        <span style="cursor: pointer;" id="/spawnpoint" onclick="navigator.clipboard.writeText('/spawnpoint');">/spawnpoint</span><br>
+        <span style="cursor: pointer;" id="/spreadplayers" onclick="navigator.clipboard.writeText('/spreadplayers');">/spreadplayers</span><br>
+        <span style="cursor: pointer;" id="/stopsound" onclick="navigator.clipboard.writeText('/stopsound');">/stopsound</span><br>
+        <span style="cursor: pointer;" id="/structure" onclick="navigator.clipboard.writeText('/structure');">/structure</span><br>
+        <span style="cursor: pointer;" id="/summon" onclick="navigator.clipboard.writeText('/summon');">/summon</span><br>
+        <span style="cursor: pointer;" id="/tag" onclick="navigator.clipboard.writeText('/tag');">/tag</span><br>
+        <span style="cursor: pointer;" id="/teleport" onclick="navigator.clipboard.writeText('/teleport');">/teleport</span><br>
+        <span style="cursor: pointer;" id="/tell" onclick="navigator.clipboard.writeText('/tell');">/tell</span><br>
+        <span style="cursor: pointer;" id="/tellraw" onclick="navigator.clipboard.writeText('/tellraw');">/tellraw</span><br>
+        <span style="cursor: pointer;" id="/testfor" onclick="navigator.clipboard.writeText('/testfor');">/testfor</span><br>
+        <span style="cursor: pointer;" id="/testforblock" onclick="navigator.clipboard.writeText('/testforblock');">/testforblock</span><br>
+        <span style="cursor: pointer;" id="/testforblocks" onclick="navigator.clipboard.writeText('/testforblocks');">/testforblocks</span><br>
+        <span style="cursor: pointer;" id="/tickingarea" onclick="navigator.clipboard.writeText('/tickingarea');">/tickingarea</span><br>
+        <span style="cursor: pointer;" id="/time" onclick="navigator.clipboard.writeText('/time');">/time</span><br>
+        <span style="cursor: pointer;" id="/title" onclick="navigator.clipboard.writeText('/title');">/title</span><br>
+        <span style="cursor: pointer;" id="/titleraw" onclick="navigator.clipboard.writeText('/titleraw');">/titleraw</span><br>
+        <span style="cursor: pointer;" id="/toggledownfall" onclick="navigator.clipboard.writeText('/toggledownfall');">/toggledownfall</span><br>
+        <span style="cursor: pointer;" id="/tp" onclick="navigator.clipboard.writeText('/tp');">/tp</span><br>
+        <span style="cursor: pointer;" id="/w" onclick="navigator.clipboard.writeText('/w');">/w</span><br>
+        <span style="cursor: pointer;" id="/wb" onclick="navigator.clipboard.writeText('/wb');">/wb</span><br>
+        <span style="cursor: pointer;" id="/weather" onclick="navigator.clipboard.writeText('/weather');">/weather</span><br>
+        <span style="cursor: pointer;" id="/worldbuilder" onclick="navigator.clipboard.writeText('/worldbuilder');">/worldbuilder</span><br>
+        <span style="cursor: pointer;" onclick="navigator.clipboard.writeText('/wsserver');">/wsserver</span><br>
+        <span style="cursor: pointer;" onclick="navigator.clipboard.writeText('/xp');">/xp</span><br>
+        </p>
+        <div style="height: 10rem;"></div>
+        <footer>
+            <a href="./command.pdf" style="font-family:'Courier New', Courier, monospace;" target="_blank">PDFのダウンロード</a>
+        </footer>
+    </body>
+</html>
