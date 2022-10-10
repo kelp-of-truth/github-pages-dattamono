@@ -1,12 +1,38 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!DOCTYPE html>
 <html lang="ja">
-<head>
-<!-- <meta http-equiv="Content-Type" 
-        content="text/html; charset=Shift_Jis"> -->
-<title>PHP入門</title>
-</head>
-
-<body>
-<p>今日は、<?php echo hoge ?> です。</p>
-</body>
+ <head>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/0.0.11/push.min.js"></script>
+  <meta charset="UTF-8">
+   <title>ブラウザでプッシュ通知を実装</title>
+ </head>
+ <body>
+  <center>
+   <h1 style="margin-top: 300px">ブラウザでプッシュ通知を実装しよう</h1>
+  </center>
+  <center>
+   <input type="button" id="push" onclick="return push()" value="クリックするとプッシュ通知が送られます">
+  </center>
+ </body>
+    <script>
+        //alert("a")
+ function push(){
+ Push.create('更新情報');
+ }
+</script>
+    <script>
+ function push(){
+  Push.create("更新情報", 
+   {
+    body: "ブログの更新をお知らせします!",
+    icon: 'casley_logo.png',
+    timeout: 8000,
+    onClick: function () {
+    window.focus(); 
+    this.close();
+    }
+  })
+}
+        
+</script>
 </html>
