@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <meta charset="utf-8">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+	<body>
+		<audio src="./myRecording00.wav" id="audio"></audio>
+		<div id="audio-div">
+			<section class="center">
+				<button onclick="backAudio()"><span class="material-symbols-rounded">skip_previous</span></button>
+				<button><span class="material-symbols-rounded">replay_10</span></button>
+				<button id="play-btn"><span class="material-symbols-rounded">play_arrow</span></button>
+				<button><span class="material-symbols-rounded">forward_10</span></button>
+				<button onclick="nextAudio()"><span class="material-symbols-rounded">skip_next</span></button>
+			</section>
+			<button style="float: right;"><span class="material-symbols-rounded" id="loop-btn">repeat</span></button>
+				<br>
+			<section class="center">
+            	<input type="range" id="audio-range" value="0" id="audio-bar" max="100" step="0.001"><br>
+				<label id="current" style="color: white;">0</label>
+			</section>
+		</div>
+	</body>
+	<script src="./script.js"></script>
+</html>
