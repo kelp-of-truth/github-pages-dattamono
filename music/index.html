@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <meta charset="utf-8">
+		<title>Audio Player</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+		<link rel="icon" href="./icon.png">
+		<meta name="theme" content="#303030">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    </head>
+	<body>
+		<div id="def">
+		<div id="menu">
+  			<button id=menu-btn><span class="material-symbols-rounded">settings</span></button><label for="menu-btn" style="font-family: 'Roboto Condensed', sans-serif;font-size: 36px;padding-left: 0.2em;user-select: none;">Settings</label>
+			<div id="items">
+				<label class="item">Theme</label><input type="color" id="theme-col" value="#1eff87"><label for="theme-col" id="for-theme">#1eff87</label><br>
+				<label class="item">Background Color</label><input type="color" id="back-col" value="#303030"><label for="back-col">#303030</label><br>
+				<label class="item">Font Color</label><input type="color" id="font-col" value="#ffffff"><label for="font-col">#ffffff</label>
+			</div>
+		</div>
+		<div id="audio-div">
+			<section class="center">
+
+				<span style="width: 36px;height: 36px;display: inline-block;background-color: unset"></span>
+				<button onclick="backAudio()"><span class="material-symbols-rounded">skip_previous</span></button>
+				<button><span class="material-symbols-rounded">replay_10</span></button>
+				<button id="play-btn"><span class="material-symbols-rounded">play_arrow</span></button>
+				<button><span class="material-symbols-rounded">forward_10</span></button>
+				<button onclick="nextAudio()"><span class="material-symbols-rounded">skip_next</span></button>
+				<button><span class="material-symbols-rounded" id="loop-btn">repeat</span></button>
+
+			</section>
+				<br>
+			<section class="center">
+            	<input type="range" id="audio-range" value="0" id="audio-bar" max="100" step="0.001"><br>
+				<label id="current" style="color: white;font-family: 'Signika', sans-serif;font-size: 20px;">00:00:00 / 00:00:00</label>
+			</section>
+		</div>
+		<div id="thum">
+			<a href="https://maou.audio/14_shining_star/" target="_blank"><img src="./thum.jpeg"></a>
+		</div>
+		<div id="lyrics">
+<pre>
+ただ風に揺られて
+何も考えずに
+ただ雲を眺めて
+過ごすのもいいよね
+
+誰しも何かしら
+使命を抱えてる
+ただそれだけのこと
+悩むのはもうやめた
+
+さざなみの音に癒やされてく
+軌跡を運ぶ風の音
+時を閉じ込めて
+
+シャイニングスター綴れば
+夢に眠る幻が掌に降り注ぐ
+新たな世界へ
+I'll believe of my sensation
+果てしない道の向こうで
+瞼の裏に映る
+一滴の光
+トキメキを感じて
+
+貴方が触れる全て
+幸せであるように
+今生きる喜びを
+忘れてしまわないよう
+
+月の光 隠す雲は揺らぎ
+自由の翼は今も
+大空を翔る
+
+シャイニングスター綴れば
+無限のイマジネーション
+魔法が使えるような
+世界が広がる
+I'll believe of my sensation
+今も降り募る想いよ
+切なさやトキメキが
+心の真ん中で
+熱いメロディになる
+
+シャイニングスター綴れば
+無限のイマジネーション
+魔法が使えるような
+世界が広がる
+I'll believe of my sensation
+今も降り募る想いよ
+切なさやトキメキが輝き出す
+
+シャイニングスター綴れば
+夢に眠る幻が掌に降り注ぐ
+新たな世界へ
+I'll believe of my sensation
+果てしない道の向こうで
+瞼の裏に映る
+一滴の光
+トキメキを感じて
+
+LaLaLa
+</pre>
+		</div>
+		</div>
+
+	<div id="iPhone" hidden>
+		<div id="menu">
+			<button id=menu-btn><span class="material-symbols-rounded">settings</span></button>
+		  <div id="items">
+			  <label class="item">Theme</label><input type="color" id="theme-col" value="#1eff87"><label for="theme-col" id="for-theme">#1eff87</label><br>
+			  <label class="item">Background Color</label><input type="color" id="back-col" value="#303030"><label for="back-col">#303030</label><br>
+			  <label class="item">Font Color</label><input type="color" id="font-col" value="#ffffff"><label for="font-col">#ffffff</label>
+		  </div>
+	  </div>
+	  <div id="audio-div">
+		  <section class="center">
+
+			  <span style="width: 36px;height: 36px;display: inline-block;background-color: unset"></span>
+			  <button onclick="backAudio()"><span class="material-symbols-rounded">skip_previous</span></button>
+			  <button><span class="material-symbols-rounded">replay_10</span></button>
+			  <button id="play-btn"><span class="material-symbols-rounded">play_arrow</span></button>
+			  <button><span class="material-symbols-rounded">forward_10</span></button>
+			  <button onclick="nextAudio()"><span class="material-symbols-rounded">skip_next</span></button>
+			  <button><span class="material-symbols-rounded" id="loop-btn">repeat</span></button>
+
+		  </section>
+			  <br>
+		  <section class="center">
+			  <input type="range" id="audio-range" value="0" id="audio-bar" max="100" step="0.001"><br>
+			  <label id="current" style="color: white;font-family: 'Signika', sans-serif;font-size: 20px;">00:00:00 / 00:00:00</label>
+		  </section>
+	  </div>
+	  <div id="thum">
+		  <a style="margin-left: 0px !important;" href="https://maou.audio/14_shining_star/" target="_blank"><img src="./thum.jpeg"></a>
+	  </div>
+	  <div id="lyrics">
+<pre>
+ただ風に揺られて
+何も考えずに
+ただ雲を眺めて
+過ごすのもいいよね
+
+誰しも何かしら
+使命を抱えてる
+ただそれだけのこと
+悩むのはもうやめた
+
+さざなみの音に癒やされてく
+軌跡を運ぶ風の音
+時を閉じ込めて
+
+シャイニングスター綴れば
+夢に眠る幻が掌に降り注ぐ
+新たな世界へ
+I'll believe of my sensation
+果てしない道の向こうで
+瞼の裏に映る
+一滴の光
+トキメキを感じて
+
+貴方が触れる全て
+幸せであるように
+今生きる喜びを
+忘れてしまわないよう
+
+月の光 隠す雲は揺らぎ
+自由の翼は今も
+大空を翔る
+
+シャイニングスター綴れば
+無限のイマジネーション
+魔法が使えるような
+世界が広がる
+I'll believe of my sensation
+今も降り募る想いよ
+切なさやトキメキが
+心の真ん中で
+熱いメロディになる
+
+シャイニングスター綴れば
+無限のイマジネーション
+魔法が使えるような
+世界が広がる
+I'll believe of my sensation
+今も降り募る想いよ
+切なさやトキメキが輝き出す
+
+シャイニングスター綴れば
+夢に眠る幻が掌に降り注ぐ
+新たな世界へ
+I'll believe of my sensation
+果てしない道の向こうで
+瞼の裏に映る
+一滴の光
+トキメキを感じて
+
+LaLaLa
+</pre>
+	  </div>
+	</div>
+	</body>
+	
+	<script src="./script.js"></script>
+</html>
