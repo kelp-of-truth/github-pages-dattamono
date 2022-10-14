@@ -48,15 +48,6 @@ function nextAudio(){
 
 
 window.onload=()=>{
-    
-    if(isSmartPhone()===true){
-        document.getElementById('def').hidden=true;
-        document.getElementById('iPhone').hidden=false;
-    }else{
-        document.getElementById('def').hidden=false;
-        document.getElementById('iPhone').hidden=true;
-    }
-
     setInterval(() => {
         current.innerHTML=`${tohms(music.duration)} / ${tohms(music.currentTime)}`
     }, 1);
@@ -161,11 +152,3 @@ menuBtn.onclick=()=>{
 
 
 
-
-function isSmartPhone() {
-    if (navigator.userAgent.match(/iPhone|Android.+Mobile/)) {
-      return true;
-    } else {
-      return false;
-    }
-}
