@@ -4,5 +4,6 @@
   "start_url": ".",
   "display": "standalone",
   "background_color": "#fff",
-  "description": "Konbu0918のウェブページ"
+  "description": "Konbu0918のウェブページ",
+  "display":"standalone"
 }
