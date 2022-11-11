@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+html, body, input, textarea{
+    font-family: 'Roboto', sans-serif;
+}
+input:focus, textarea:focus{
+    outline: none;
+}
+
+
+
+
+header{
+    position: fixed;
+    height: fit-content;
+    width: 100%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+header #search-form{
+    margin-left: calc(50% - 270px);
+}
+header #search-icon{
+    width: fit-content;
+    height: fit-content;
+    padding-top: 0.8rem;
+    padding-bottom: 0.7rem;
+    margin-bottom: 0.7rem;
+    display: flex;
+    z-index: 1;
+    position: fixed;
+    /* margin-top: 8px; */
+    /* margin-left: 0.2rem; */
+    padding-left: 0.8rem;
+    padding-right: 0.2rem;
+    opacity: 0.7;
+    font-size: 20px;
+    user-select: none;
+    cursor: default;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+header #search-content{
+    border: 1.5px solid white;
+    position: fixed;
+    padding-right: 1em;
+    padding-left: 2em;
+    border-radius: 1.2em;
+    background-color: unset;
+    box-shadow:
+    0 0.1px 2.5px rgba(0, 0, 0, 0.057),
+    0 0.15px 6.1px rgba(0, 0, 0, 0.076),
+    0 0.4px 11.4px rgba(0, 0, 0, 0.086),
+    0 1.7px 19.8px rgba(0, 0, 0, 0.092),
+    0 1.1px 34.8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    width: 540px;
+}
+
+
+
+footer{
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    bottom: 10px;
+    right: 10px;
+}
+footer #edit-home{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: fit-content;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 26px;
+    border: unset;
+    background-color: white;
+    box-shadow:
+    0 0.1px 2.5px rgba(0, 0, 0, 0.057),
+    0 0.15px 6.1px rgba(0, 0, 0, 0.076),
+    0 0.4px 11.4px rgba(0, 0, 0, 0.086),
+    0 1.7px 19.8px rgba(0, 0, 0, 0.092),
+    0 1.1px 34.8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+footer #edit-home img{
+    height: 36px;
+    width: 36px;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+
+
+main{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+#edit-body{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+}
+#edit-json{
+    resize: none;
+    height: 360px;
+    width: 540px;
+    /* background-color: rgba(255, 255, 255, 0.415); */
+    background-color: black;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    position: absolute;
+    z-index: 100;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    border: 2px outset rgb(208, 208, 208);
+}
+#cancel-edit{
+    border-radius: 5px;
+    background-color: red;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+#done-edit{
+    border-radius: 5px;
+    background-color: rgb(50, 205, 63);
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+#for-choose-jsonfile{
+    height: fit-content;
+    width: fit-content;
+    padding: 0px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+#for-choose-jsonfile label{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+#shortcuts{
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 832px;
+}
+#shortcuts img{
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.shortcut-icon{
+    margin: 16px;
+    height: 64px;
+    width: 64px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow:
+    0 0.1px 2.5px rgba(0, 0, 0, 0.057),
+    0 0.15px 6.1px rgba(0, 0, 0, 0.076),
+    0 0.4px 11.4px rgba(0, 0, 0, 0.086),
+    0 1.7px 19.8px rgba(0, 0, 0, 0.092),
+    0 1.1px 34.8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}

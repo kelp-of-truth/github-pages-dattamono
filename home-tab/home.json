@@ -1,0 +1,31 @@
+{
+    "background":{
+        "type":"color",
+        "color":"white",
+        "url":""
+    },
+    "font_color":"black",
+    "search":{
+        "display":true,
+        "search_engine":{
+            "name":"Google",
+            "url":"https://google.com/search?q=%s"
+        }
+    },
+    "shortcut":{
+        "display":true,
+        "newtab":false,
+        "shortcuts":[
+            {
+                "type":"input",
+                "name":"Youtube",
+                "url":"https://www.youtube.com/search?q=%s"
+            },
+            {
+                "type":"https://www.netflix.com/jp/",
+                "name":"Netflix",
+                "url":"https://www.netflix.com/jp/"
+            }
+        ]
+    }
+}
