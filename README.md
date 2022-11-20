@@ -1,4 +1,4 @@
-([https://img.shields.io/twitter/follow/KelpOfTruth?label=Follow)
+(https://img.shields.io/twitter/follow/KelpOfTruth?label=Follow)
 
 ---
 
