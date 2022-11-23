@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+
+
+html, body{
+    padding: 0px;
+    margin: 0px;
+}
+*{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+input{
+    font-weight: 550;
+    border-radius: 0.75em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.3em;
+    padding-bottom: 0.2em;
+    border: 0.1em solid black;
+    background-color: white;
+}
+input:focus{
+    outline: none;
+}
+
+header{
+    /* position: fixed; */
+    width: 80vw;
+    float: right;
+    height: fit-content;
+    padding-bottom: 1em;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+#search-dir{
+    text-align: center;
+    font-size: 24px;
+}
+
+
+.README-body{
+    width: 78vw;
+    float: right;
+    display: block;
+    padding-left: 2vw;
+}
+.README-nav{
+    height: 100%;
+    width: 20vw;
+    float: left;
+    display: block;
+    background-color: #7289DA;
+    position: fixed;
+    overflow: scroll;
+}
+.README-nav::-webkit-scrollbar{
+    display: none;
+}
