@@ -1,0 +1,54 @@
+@charset "utf-8";
+@font-face {
+    font-family: "Dot";
+    src: url(./JF-Dot-Kaname12.ttf);
+}
+
+html, body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+input, textarea, label{
+    padding: 2px;
+    border-radius: 2px;
+    /* font-family: Dot; */
+    outline: unset;
+    font-size: 32px;
+}
+h1{
+    text-align: center;
+}
+
+.main{
+    /* font-family: Dot; */
+    width: 100%;
+}
+.input{
+    width: 90vw;
+    max-width: 1200px;
+    color: white;
+    background-color: #5c5c5c;
+    border: 1px solid #363636;
+    box-shadow: -1px -1px rgba(0, 0, 0, 0.525);
+}
+.update{
+    width: fit-content;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #929292;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid #363636;
+}
+.output{
+    width: 90vw;
+    max-width: 1200px;
+    color: white;
+    background-color: #5c5c5c;
+    border: 1px solid #363636;
+    box-shadow: -1px -1px rgba(0, 0, 0, 0.525);
+}

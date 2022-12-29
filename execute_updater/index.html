@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>execute updater</title>
+        <link rel="icon" href="./icon.png">
+        <link rel="stylesheet" href="./style.css">
+        <meta name="description" content="旧executeを新executeに変換します。">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    </head>
+
+    <body>
+        <h1>旧execute変換</h1>
+        <div class="main">
+            <label style="grid-column: 1;grid-row: 1;">入力</label> <input type="text" class="input"><br>
+            <label for="slash_op">出力コマンドにスラッシュを入れる</label><input type="checkbox" checked id="slash_op" class="slash_op" style="transform: scale(2);margin-left: 0.5em;"><br>
+            <input type="button" class="update" value="変換"><br>
+            <label style="grid-column: 1;grid-row: 3;">出力</label><input type="text" class="output" disabled><span style="position: absolute;user-select: none;margin-top: 8px;margin-left: -40px;cursor: pointer;background-color: rgb(235, 235, 235);border: 1px solid rgb(194, 194, 194);border-radius: 7px;padding: 5px;" class="material-symbols-outlined copy_btn">content_copy</span>
+        </div>
+        <label style="opacity: 0;pointer-events: none;background-color: white;font-size: 16px;border: 1px solid rgb(184, 184, 184);position: absolute;left: 0px;top: 0px;" class="copyed">コピーしました</label>
+        <div style="height: 64px;"></div>
+        <input type="button" value="クリア" class="clear_all" style="cursor: pointer;background-color: rgb(235, 235, 235);border: 1px solid rgb(194, 194, 194);border-radius: 7px;padding: 5px;font-size: 16px;color: rgb(255, 77, 77);" >
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./script.js"></script>
+</html>
