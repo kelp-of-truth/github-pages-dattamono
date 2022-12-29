@@ -11,9 +11,12 @@ $(".update").on("click",()=>{
     };
     var run_cmd="";
 
+    if(input[0]==="execute"){
+        run_cmd+="execute"
+    }
     cmd_id(0);
     function cmd_id(i){
-        run_cmd+=`${input[i+0]} as ${input[i+1]} at @s `;
+        run_cmd+=` as ${input[i+1]} at @s `;
         if(input[i+2]!=="~~~"){
             run_cmd+=`positioned ${input[i+2]} `;
         };
@@ -26,12 +29,12 @@ $(".update").on("click",()=>{
                 cmd_id(i+7);
             }else{
                 run_cmd+="run";
-                for(let j=0;j<input.length-i-6;j++){
-                    run_cmd+=` ${input[i+j+6]}`;
+                for(let j=0;j<input.length-i-7;j++){
+                    run_cmd+=` ${input[i+j+7]}`;
                 }
             };
         }else if(input[i+3]==="execute"){
-            cmd_id(i+4);
+            cmd_id(i+3);
         }else{
             run_cmd+="run"
             for(let j=0;j<input.length-i-3;j++){
