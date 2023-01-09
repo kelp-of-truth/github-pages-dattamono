@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>YouTubeの動画に高評価がついていなければ高評価をつけるスクリプト</title>
+        <link rel="icon" href="../../src/icon.png">
+        <link rel="stylesheet" href="../../src/style.css">
+        <meta name="description" content="週一回を目標でブログを投稿します。">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anybody&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../../src/prism.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1>KonBlog</h1>
+                <h2>KelpOfTruth's blog</h2>
+            </div>
+            <nav class="header-nav">
+                <a href="https://kelp-of-truth.github.io/blog/" class="top"><span class="material-symbols-sharp">home</span>Top</a><a href="https://kelp-of-truth.github.io/blog/webdesign" class="webDesign"><span class="material-symbols-sharp">display_settings</span>WebDesign</a><a href="https://kelp-of-truth.github.io/blog/minecraft" class="minecraft"><span class="material-symbols-sharp">videogame_asset</span>Minecraft</a><a href="https://kelp-of-truth.github.io/" class="profile" target="_blank"><span class="material-symbols-sharp">account_circle</span>Profile</a><a href="https://www.youtube.com/@kelpoftruth/" class="youtube" target="_blank"><span class="material-symbols-sharp">youtube_activity</span>YouTube</a><a href="https://kelp-of-truth.github.io/blog/contact/" class="contact-icon" target="_blank"><span class="material-symbols-sharp">mail</span>Contact</a>
+            </nav>
+            <div class="blog-pos"><a href="https://kelp-of-truth.github.io/blog/"><span class="material-symbols-sharp">home</span>top</a></div>
+        </header>
+
+        <main>
+            <section class="article-top">
+               <h1 class="article-title">YouTubeに高評価をつけるスクリプト</h1>
+                <p>動画に高評価がついていなければ高評価をつけるスクリプトです。いつ使うんだろ...</p><br>
+                <span class="ph"><span class="material-symbols-sharp" title="最終更新日">calendar_month</span>2023/1/7</span>
+            </section>
+            <section class="article-nav">
+                <h1><span class="material-symbols-sharp">toc</span>目次</h1>
+                    <nav>
+                       <ul>
+                           <li><a href="#source-code">ソースコード</a></li>
+                       </ul>
+                   </nav>
+
+                   <h2>ソースコード</h2>
+                   <p>
+                        <pre><code class="language-javascript">if(document.getElementsByClassName("yt-spec-button-shape-next yt-spec-button-shape-next--tonal yt-spec-button-shape-next--mono yt-spec-button-shape-next--size-m yt-spec-button-shape-next--icon-leading yt-spec-button-shape-next--segmented-start")[0].getAttribute("aria-pressed")==="false"){
+    document.getElementsByClassName("yt-spec-button-shape-next yt-spec-button-shape-next--tonal yt-spec-button-shape-next--mono yt-spec-button-shape-next--size-m yt-spec-button-shape-next--icon-leading yt-spec-button-shape-next--segmented-start")[0].click();
+};</code></pre>
+                        <span class="hl">aria-pressed</span>という属性が<span class="hl">true</span>だと高評価がついている状態。<span class="hl">false</span>だとついていない状態。<span class="hl">aria-pressed</span>がfalseだった場合に高評価ボタンを<span class="hl">click()</span>を使ってクリックして高評価をつけてます。高評価の要素のクラスは変わる可能性があるのでその都度調べ直す必要があります。探す方法としては、開発者ツールを開いて、<span class="hl">aria-pressed</span>を検索してください。２つあるので高評価の方を見つけてください。（ちなみにもう一つは、左上の登録チャンネルとかの表示を切り替えるあれです。）
+                   </p>
+            </section>
+
+
+            <hr>
+            <section class="comment">
+                <h1>コンタクト</h1>
+                <p>この記事につくてなにかありましたら下のフォームを送信してください。</p><br>
+                
+                <form id="contact" class="contact" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScNh6jdNzD2R3Q2Io2-3I627ivpoznDfOzkjLF3f9roL59rBQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;alert('コメントありがとうございます。');">
+                    <input type="hidden" class="blog-pos" name="entry.1109078532">
+                    <label style="grid-column: 1;grid-row: 1;">名前</label><input style="grid-column: 2;grid-row: 1;" type="text" class="form-name" placeholder="こんぶ" name="entry.1303618498"><br>
+                    <label style="grid-column: 1;grid-row: 2;">メールアドレス(返信用)</label><input style="grid-column: 2;grid-row: 2;" type="email" class="email" placeholder="example@gmail.com" name="entry.1621181306"><br>
+                    <label style="grid-column: 1;grid-row: 3;">内容</label><textarea style="grid-column: 2;grid-row: 3;" cols="30" rows="10" class="form-content" name="entry.1817238336"></textarea>
+                    <input type="submit" style="grid-column: 1 / 3;grid-row: 4;">
+                </form>
+            </section>
+
+        </main>
+
+        <aside>
+            Ads & articles
+        </aside>
+
+        <footer>
+            <a href="https://kelp-of-truth.github.io/blog/" class="footer-logo">
+                <h1>KonBlog</h1>
+                <h2>KelpOfTruth's blog</h2>
+            </a>
+            <table>
+                <tr><td>製作者</td><td>Kelp Of Truth</td></tr>
+                <tr><td>Github</td><td><a href="https://github.com/kelp-of-truth/kelp-of-truth.github.io/tree/main/blog" target="_blank">kelp-of-truth.github.io...</a></td></tr>
+            </table>
+        </footer>
+
+        
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"></script>
+<script src="../../src/script.js"></script>
+<script src="../../src/prism.js"></script>
+</html>

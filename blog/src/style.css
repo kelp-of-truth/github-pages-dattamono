@@ -1,0 +1,329 @@
+@charset "utf-8";
+
+.material-symbols-sharp {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+main h1{
+    font-size: 1.5rem;
+    line-height: 1em;
+    vertical-align: -1rem;
+    display: inline;
+}
+hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: unset;
+    border-top: 2px dotted #87ceeb;
+    /* background-color: #8cdcfb; */
+}
+.space{
+    height: 3rem;
+}
+*:focus{
+    outline: none;
+}
+.material-symbols-sharp{
+    vertical-align: -5px;
+    user-select: none;
+}
+.header-nav{
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+.header-nav::-webkit-scrollbar{
+    height: 0px;
+    width: 0px;
+    display: none;
+}
+.header-nav .material-symbols-sharp{
+    margin-right: 5px;
+}
+.open-new{
+    font-size: 24px;
+}
+html, body{
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(252, 251, 248);
+}
+a{
+    color: rgb(65, 189, 255);
+}
+a:hover{
+    color: rgb(64, 182, 214);
+}
+a:active{
+    color: rgb(25, 92, 123);
+}
+header{
+    background-color: rgb(28, 29, 37);
+}
+.logo{
+    text-align: center;
+    /* margin-left: 64px; */
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    background-image: url(../image/logo_bg.jpg);
+    background-color: skyblue;
+    background-size: 40%;
+}
+.logo h1{
+    font-family: 'Oleo Script', cursive;
+    font-size: 4rem;
+    color: #000;
+}
+.logo h1, .logo h2{
+    line-height: 0.1rem;
+}
+.logo h2{
+    font-family: 'Righteous', cursive;
+    font-size: 1.8rem;
+    font-weight: 250;
+    color: rgb(73, 73, 73);
+}
+
+.header-nav{
+    white-space: none;
+    margin-left: 0px;
+    padding-left: 64px;
+    display: inline-block;
+    width: calc(100vw - 64px);
+    height: fit-content;
+    background-color: rgb(54, 55, 72);
+    cursor: default;
+}
+.header-nav a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(228, 228, 228);
+    font-size: 1rem;
+    font-family: 'Anybody', cursive;
+    padding: 9px;
+    padding-left: 36px;
+    padding-right: 36px;
+    transition: 200ms;
+    box-sizing: border-box;
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
+}
+.header-nav a:hover, .header-nav a:focus{
+    color: rgb(83, 71, 213);
+    background-color: rgba(255, 255, 255, 0.674);
+    border-bottom-color: rgb(36, 36, 165);
+}
+.blog-pos{
+    background-color: rgb(28, 29, 37);
+    padding-top: 1px;
+    padding-bottom: 6px;
+    padding-left: 64px;
+    /* text-shadow: 1px 1px rgb(177, 170, 255), -1px -1px rgb(177, 170, 255), -1px 1px rgb(177, 170, 255), 1px -1px rgb(177, 170, 255); */
+    color: rgb(161, 181, 255);
+    font-weight: 800;
+}
+.blog-pos a{
+    color: white;
+}
+.blog-pos label{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+
+main{
+    margin-left: 64px;
+    width: calc(100% - 264px);
+    margin-top: unset;
+    line-height: 2rem;
+}
+main *{
+    font-family: 'M PLUS 1p', sans-serif;
+}
+.hl{
+    background-color: rgba(202, 202, 202, 0.5);
+    padding: 0.1em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    border-radius: 5px;
+    font-family: 'Inconsolata', monospace;
+}
+pre{
+    width: 75%;
+    min-width: 400px;
+    border-radius: 8px;
+    max-height: 20em;
+}
+code *{
+    font-family: 'Inconsolata', monospace;
+}
+
+aside{
+    
+    width: 200px;
+    /* background-color: rgb(239, 239, 239); */
+    display: flex;
+    position: absolute;
+    right: 0px;
+    top: calc(9.8rem + 104px);
+}
+
+
+main h2{
+    font-size: 1.5rem;
+    /* background-color: rgb(59, 59, 172); */
+    /* color: white; */
+    color: black;
+    border-left: 5px solid rgb(0, 0, 107);
+    padding-left: 5px;
+}
+main h2::first-letter{
+    color: rgb(0, 23, 156);
+    font-size: 1.1em;
+    font-weight: bold;
+    /* text-shadow: 1px 1px rgb(177, 170, 255), -1px -1px rgb(177, 170, 255), -1px 1px rgb(177, 170, 255), 1px -1px rgb(177, 170, 255); */
+}
+
+.ph{
+    border-bottom: 1px solid rgb(234, 233, 230);
+    border-top: 1px solid rgb(234, 233, 230);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    display: block;
+    background-color: rgb(245, 244, 241);
+    padding-left: 1em;
+}
+.article-top{
+    color: rgb(120, 120, 120);
+}
+.article-title{
+    font-size: 2rem;
+    line-height: 0;
+}
+.article-nav h2{
+    color: black;
+    font-size: 2rem;
+}
+.article-nav nav{
+    background-color: rgb(245, 244, 241);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    border: 1px solid rgb(234, 233, 230);
+}
+
+.image{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 80%;
+    cursor: pointer;
+}
+#viewer-image{
+    width: 90%;
+    z-index: 11;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+}
+#black-bg{
+    background-color: rgba(0, 0, 0, 0.75);z-index: 10;height: 100vw;width: 100vw;position: fixed;top: 0px;left: 0px;
+}
+
+
+
+
+.contact{
+    width: 80%;
+    display: grid;
+    grid-template-columns: max-content min-content;
+    grid-template-rows: min-content min-content 1fr min-content;
+}
+.contact label{
+    font-size: 18px;
+    padding-top: 0.25em;
+    padding-right: 0.5em;
+}
+.contact input[type=text],.contact input[type=email]{
+    max-width: calc(100vw - 280px);
+    transition: 250ms;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    width: 20em;
+    border: 2px solid rgb(161, 161, 161);
+    border-radius: 3px;
+    background-color: white;
+    font-size: 18px;
+}
+.contact input[type=submit]{
+    max-width: calc(100vw - 40px);
+    transition: 250ms;
+    font-size: 18px;
+    background-color: rgb(85, 85, 255);
+    border: 2px solid rgb(161, 161, 161);
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.contact textarea{
+    max-width: calc(100vw - 280px);
+    transition: 250ms;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    border: 2px solid rgb(161, 161, 161);
+    border-radius: 3px;
+    background-color: white;
+    font-size: 18px;
+    resize: none;
+    height: 8em;
+    width: 20em;
+}
+
+.form-name{
+    grid-column: 2;
+    grid-row: 1;
+}
+.contact textarea:focus,.contact input:focus{
+    border-color: rgb(85, 85, 255);
+}
+
+
+
+
+footer{
+    background-color: rgb(36, 36, 36);
+    width: 100vw;
+    height: 10rem;
+    display: block;
+    margin-top: unset;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+.footer-logo{
+    text-decoration: none;
+}
+.footer-logo h1{
+    font-family: 'Oleo Script', cursive;
+    font-size: 2rem;
+    color: #fff;
+    height: 0.895rem;
+    margin-left: 1rem;
+}
+.footer-logo h2{
+    font-family: 'Righteous', cursive;
+    font-size: 0.9rem;
+    font-weight: 250;
+    color: rgb(182, 182, 182);
+    margin-left: 1rem;
+}
+footer table{
+    margin-right: 1rem;
+    float: right;
+}
