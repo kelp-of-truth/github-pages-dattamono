@@ -17,3 +17,7 @@ html, body{
     width: 1rem;
     padding-top: 0.2rem;
 }
+
+#searchBox{
+    font-size: 18px;
+}
