@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+table *{
+    font-size: 20px;
+}
+table img{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
