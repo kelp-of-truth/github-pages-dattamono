@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+
+main h2{
+    margin-left: 0.5rem;
+}
+main article p{
+    margin-left: 1.5rem;
+}
+main img{
+    width: calc(100% - 24px);
+    border-radius: 5px;
+}
+main table, main table td{
+    border-style: solid;
+    border-color: rgb(73, 73, 73);
+}
+main td{
+    padding: 0.25rem;
+}
+main table img{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: unset;
+    vertical-align: middle;
+    image-rendering: pixelated;
+}
+main a{
+    color: rgb(115, 115, 255);
+}

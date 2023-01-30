@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+html, body{
+    padding: 0px;
+    margin: 0px;
+    background: rgb(169, 169, 169);
+}
+html{
+    background-color: rgb(233, 233, 233);
+}
+body{
+    width: calc(100% - 48px);
+    max-width: 720px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+hr{
+    border: 1px inset rgb(187, 239, 255);
+}
+*{
+    color: white;
+}
+*:focus{
+    outline: none;
+}
+
+
+.gaming {
+    background: linear-gradient(to right, Magenta, yellow, Cyan, Magenta) 0% center/200%;
+    animation: gaming 2s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes gaming{
+    100%{
+        background-position-x: 200%;
+    }
+}
+@keyframes lighing {
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        text-shadow: 0 0 10px #fff,0 0 15px #fff;
+    }
+}
+@keyframes light-fade {
+    50%{
+        text-shadow: 0 0 10px #fff,0 0 15px #fff;
+    }
+    100%{
+        text-shadow: unset;
+    }
+}
+
+
+.article-title{
+    /* line-height: 0.8; */
+}
+.article-sub-title{
+    animation: light-fade 5s linear infinite;
+}
+
+
+
+header h1, header h2{
+    text-align: center;
+}
+header nav{
+    margin-left: 3rem;
+    font-size: 1.15rem;
+}
+footer{
+    width: 100%;
+    height: 156px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
+    background-color: black;
+    padding-top: 48px;
+}
+main{
+    padding-bottom: 156px;
+}
+main h2{
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+main h2:hover{
+    background: linear-gradient(to right, white, white, rgb(27, 144, 190), white) 0% center/200%;
+    animation: gaming 1s linear;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.links{
+    width: fit-content;
+    display: inline;
+    white-space: nowrap;
+    list-style: none;
+    user-select: none;
+    position: absolute;
+    left: 0px;
+    right: 5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.links li{
+    white-space: nowrap;
+    display: inline;
+}
+.link-btn{
+    background-color: unset;
+    border: unset;
+    cursor: pointer;
+    width: 48px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.link-btn *{
+    transition: 50ms;
+}
+.link-btn svg{
+    fill: white;
+    width: calc(3vw + 24px);
+    height: calc(2vw + 24px);
+}
+.link-title{
+    font-weight: bold;
+    opacity: 0;
+    display: none;
+    color: white;
+    font-family: Roboto Mono;
+    text-align: center;
+    font-size: calc(0.5vw + 10px);
+    pointer-events: none;
+}
+.link-btn:hover .link-title{
+    display: inline;
+    animation: lighing 500ms forwards linear;
+}
+.mailto:hover svg{
+    fill: #EA4335;
+}
+.github-link:hover svg{
+    background-color: unset;
+}
+.twitter-link:hover svg{
+    fill: #1DA1F2;
+}
+.youtube-link:hover svg{
+    fill: #FF0000;
+}
+.reddit-link:hover svg{
+    fill: #FF4500;
+}
+.discord-link:hover svg{
+    fill: #5865F2;
+}

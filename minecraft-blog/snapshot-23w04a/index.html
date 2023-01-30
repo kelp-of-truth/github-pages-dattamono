@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>Minecraft snapshot 23W04A【マインクラフト・アップデート】</title>
+        <meta name="description" content="Minecraft スナップショット 23W04Aのアップデート情報です。\n参考記事: https://www.minecraft.net/en-us/article/minecraft-snapshot-23w04a">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="article.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 class="gaming article-title">MINECRAFT SNAPSHOT <br>23W04A</h1>
+            <h2 class="article-sub-title">Minecraft スナップショット 23W04A</h2>
+            <nav>
+                <ul>
+                    <li><a href="#changes">変更内容</a></li>
+                    <li><a href="#experimental-features">試験的な機能</a></li>
+                    <li><a href="#smithing-template">鍛冶台テンプレート</a></li>
+                    <li><a href="#netherite-equipment">ネザライト装備の仕様変更</a></li>
+                    <li><a href="#armor-trim">アーマートリム</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <article class="changes" id="changes">
+                <h2>変更内容</h2>
+                <p>
+                    <ul>
+                        <li>エンチャントされたアイテムと防具の輝きが控えめになりました。</li>
+                    </ul>
+                </p>
+            </article>
+            <article>
+                <h2 class="experimental-features" id="experimental-features">
+                    <h2>試験的な機能</h2>
+                    <p>
+                        <ul>
+                            <li>防具の見た目を変更するトリミングシステムの追加</li>
+                            <li>鍛冶台テンプレートアイテムの変更</li>
+                            <li>鍛冶台のUIのでデザインの一新</li>
+                            <li>ネザライト装備/ネザライトツールの作成方法の変更</li>
+                        </ul>
+                    </p>
+                </h2>
+            </article>
+            <article class="smithing-template" id="smithing-template">
+                <h2>鍛冶台テンプレート</h2>
+                <p>
+                    <ul>
+                        <li>鍛冶台が物理的な装備のアップグレードと変更のためワークステーションに再設計されました。</li>
+                        <li>装備と材料を合成するスロットに加えて鍛冶台テンプレートというアイテムタイプに必要なスロットが追加されました。</li>
+                        <li>鍛冶台テンプレートは、装備に対して行うアップグレードタイプを定義します。
+                            <ul>
+                                <li>アップグレードできるアイテムと、アップグレードをカスタムするための素材を指定します。</li>
+                                <li>現在、鍛冶台テンプレートは、アーマートリムとネザライト装備にアップグレードさせる2つがあります。</li>
+                            </ul>
+                        </li>
+                        <li>鍛冶台テンプレートは、装備のアップグレードに使うと消費されます。</li><br>
+                        <li style="list-style: none;"><img title="レシピの例" src="./image/craft-smithing-template.png" alt="craft-smithing-template"></li>
+                        <li>作業台で、ダイヤモンド7個と鍛冶台テンプレート1つと鍛冶台テンプレートごとの構成素材1つで鍛冶台テンプレートを複製できます。</li>
+                    </ul>
+                </p>
+            </article>
+            <article class="netherite-equipment" id="netherite-equipment">
+                <h2>ネザライト装備の使用変更</h2>
+                <p>
+                    <ul>
+                        <br>
+                        <li style="list-style: none;"><img title="ネザライトアップグレード鍛冶台テンプレート" src="./image/netherite-upgrade-smithing-template.png" alt="netherite-upgrade-smithing-template" style="width: 25%;border-radius: unset;"></li>
+                        <li>ネザライト装備の作成にネザライトアップグレード用の鍛冶台テンプレートが必要になりました。</li>
+                        <li>ネザライトアップグレード鍛冶台テンプレートはネザーの砦の遺跡から確率で手に入り、砦の遺跡の金ブロックの置かれている中央のチェストには必ず2個入っています。</li><br>
+                        <li>これらの仕様変更がされた理由： 
+                            <ul>
+                                <li>プレイヤーのダイヤモンド装備の使用時間を増やすため。</li>
+                                <li>ネザライト装備をゲームの進行においてより重要な成果にするため。</li>
+                                <li>ネザライトを新しい鍛冶代のシステムに自然に適応させるため。</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+            </article>
+            <article class="armor-trim" id="armor-trim">
+                <h2>アーマートリム</h2>
+                <p>
+                    <ul>
+                        <li>
+                            鍛冶台で、アーマーの見た目をカスタマイズすることができるようになりました。
+                            <ul>
+                                <li>アーマートリムは革装備以外の全ての装備に適応可能です。</li>
+                            </ul>
+                            <li>アーマートリムは見た目だけであり、防御力が上がるなどのプレイ上のメリットはなく、ヘルメット、チェストプレート、レギンス、ブーツに能美適応可能です。
+                                <ul>
+                                    <li>全てのトリムパターンは、装備のアイコン上では同じ見た目ですが、トリムの素材によって色が変わってきます。</li>
+                                    <li>土のトリムパターンを持っているかを確認するには、インベントリ内でアイテムにカーソルを合わせて確認できます。</li>
+                                </ul>
+                            </li>
+                            <li>鍛冶台テンプレートは世界中に存在し、以下の建物にはそれぞれ固有の鍛冶台テンプレートが存在します。<br><br>
+                                <table cellSpacing="0" border="1">
+                                    <!-- <tr><td><img src="./image/trim-textures/" alt=""></td><td></td><td></td></tr> -->
+                                    <tr><th>テクスチャ</th><th>入手場所</th><th>アイテム名（日本語名称未設定）</th></tr>
+                                    <tr><td><img src="./image/trim-textures/sentry_armor_trim_smithing_template.png" alt="セントリーアーマートリム"></td><td>ピリジャーの前哨基地</td><td>セントリーアーマートリム</td></tr>
+                                    <tr><td><img src="./image/trim-textures/dune_armor_trim_smithing_template.png" alt="砂丘のアーマートリム"></td><td>砂漠の寺院</td><td>砂丘のアーマートリム</td></tr>
+                                    <tr><td><img src="./image/trim-textures/coast_armor_trim_smithing_template.png" alt="海岸のアーマートリム"></td><td>難破船</td><td>海岸のアーマートリム</td></tr>
+                                    <tr><td><img src="./image/trim-textures/wild_armor_trim_smithing_template.png" alt="ワイルドアーマートリム"></td><td>ジャングルの寺院</td><td>ワイルドアーマートリム</td></tr>
+                                    <tr><td><img src="./image/trim-textures/tide_armor_trim_smithing_template.png" alt="潮のアーマートリム"></td><td>海底神殿</td><td>潮のアーマートリム</td></tr>
+                                    <tr><td><img src="./image/trim-textures/ward_armor_trim_smithing_template.png" alt="ワードアーマートリム"></td><td>古代都市</td><td>ワードアーマートリム</td></tr>
+                                    <tr><td><img src="./image/trim-textures/vex_armor_trim_smithing_template.png" alt="ヴェックスアーマートリム"></td><td>森の洋館</td><td>ヴェックスアーマートリム</td></tr>
+                                    <tr><td><img src="./image/trim-textures/rib_armor_trim_smithing_template.png" alt="リブアーマートリム"></td><td>ネザー要塞</td><td>リブアーマートリム</td></tr>
+                                    <tr><td><img src="./image/trim-textures/snout_armor_trim_smithing_template.png" alt="スナウトアーマートリム"></td><td>砦の遺跡</td><td>スナウトアーマートリム</td></tr>
+                                    <tr><td><img src="./image/trim-textures/eye_armor_trim_smithing_template.png" alt="アイアーマートリム"></td><td>エンド要塞</td><td>アイアーマートリム</td></tr>
+                                    <tr><td><img src="./image/trim-textures/spire_armor_trim_smithing_template.png" alt="スパイヤーアーマートリム"></td><td>エンドシティ</td><td>スパイヤーアーマートリム</td></tr>
+                                </table>
+                            </li>
+                        </li>
+                        <li>鍛冶台テンプレートは海底神殿を覗いて全ての構造物のチェストの中にあります。潮のアーマートリムは（tide armor trim smithing template）は、エルダーガーディアンを倒した時に確率で手に入ります。</li>
+                        <img src="./image/trim-armor-nbt-data.png" alt="NBT"><br>
+                        ※上の画像のTrimというタグのところです。
+                        <li>鎧のトリムには、パターンと素材の二つの性質を持っています。
+                            <ul>
+                                <li>パターンは、トリムの適応に仕様され、鍛冶台テンプレートによって定義され、トリムの見た目のパターンを表します。</li>
+                                <li>素材は、トリムを適用するために使用した材料によって定義され、トリムの色を表します。</li>
+                            </ul>
+                        </li>
+                        <li>鎧のトリムの色を定義するために使用できる素材は次の通りです。
+                            <ul>
+                                <li>鉄</li>
+                                <li>銅</li>
+                                <li>金</li>
+                                <li>ラピスラズリ</li>
+                                <li>エメラルド</li>
+                                <li>ダイヤモンド</li>
+                                <li>ネザライト</li>
+                                <li>レッドストーン</li>
+                                <li>アメジスト</li>
+                                <li>クオーツ</li>
+                            </ul>
+                            適応する防具と同じ素材のアイテムは使用できません。（例: ネザライトのチェストプレートにネザライトを素材にしてトリムする）
+                        </li>
+                    </ul>
+                </p>
+            </article>
+            <article>
+                <p>
+                    その他の情報は<a href="https://www.minecraft.net/en-us/article/minecraft-snapshot-23w04a">https://www.minecraft.net/en-us/article/minecraft-snapshot-23w04a</a>に載っておりますのでそちらを確認ください。
+                </p>
+            </article>
+        </main>
+        <footer>
+            <ul class="links">
+               <li><a href="mailto:kelpoftruth0918@gmail.com" target="_blank"><button class="link-btn mailto"><svg xmlns="http://www.w3.org/2000/svg" class="bi bi-envelope-fill" viewBox="0 0 16 16"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/></svg><br><span class="link-title">E-mail</span></button></a></li><li><a target="_blank" href="https://github.com/kelp-of-truth"><button class="link-btn github-link"><svg xmlns="http://www.w3.org/2000/svg" class="bi bi-github" viewBox="0 0 16 16">                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg><br><span class="link-title">GitHub</span></button></li><li><a target="_blank" href="https://twitter.com/kelpoftruth"><button class="link-btn twitter-link"><svg xmlns="http://www.w3.org/2000/svg"class="bi bi-twitter" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/></svg><br><span class="link-title">Twitter</span></button></li><li><a target="_blank" href="https://youtube.com/@kelpoftruth"><button class="link-btn youtube-link"><svg xmlns="http://www.w3.org/2000/svg" class="bi bi-youtube" viewBox="0 0 16 16"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/></svg><br><span class="link-title">YouTube</span></button></li><li><a target="_blank" href="https://www.reddit.com/user/KelpOfTruth"><button class="link-btn reddit-link"><svg xmlns="http://www.w3.org/2000/svg" class="bi bi-reddit" viewBox="0 0 16 16"><path d="M6.167 8a.831.831 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661zm1.843 3.647c.315 0 1.403-.038 1.976-.611a.232.232 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83.458 0 .83-.381.83-.83a.831.831 0 0 0-1.66 0z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.828-1.165c-.315 0-.602.124-.812.325-.801-.573-1.9-.945-3.121-.993l.534-2.501 1.738.372a.83.83 0 1 0 .83-.869.83.83 0 0 0-.744.468l-1.938-.41a.203.203 0 0 0-.153.028.186.186 0 0 0-.086.134l-.592 2.788c-1.24.038-2.358.41-3.17.992-.21-.2-.496-.324-.81-.324a1.163 1.163 0 0 0-.478 2.224c-.02.115-.029.23-.029.353 0 1.795 2.091 3.256 4.669 3.256 2.577 0 4.668-1.451 4.668-3.256 0-.114-.01-.238-.029-.353.401-.181.688-.592.688-1.069 0-.65-.525-1.165-1.165-1.165z"/></svg><br><span class="link-title">Reddit</span></button></li><li><a target="_blank" href="https://discord.gg/559CE822xn"><button class="link-btn discord-link"><svg xmlns="http://www.w3.org/2000/svg" class="bi bi-discord" viewBox="0 0 16 16"><path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/></svg><br><span class="link-title">Discord</span></button></a></li>
+            </ul>
+        </footer>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</html>
