@@ -27,4 +27,21 @@ main table img{
 }
 main a{
     color: rgb(115, 115, 255);
+    box-sizing: border-box;
+}
+main a:hover{
+    color: rgb(83, 83, 185);
+}
+main a:active, main a:focus{
+    border-radius: 5px;
+    animation: a-active 500ms linear forwards;
+}
+
+@keyframes a-active {
+    0%{
+        box-shadow: 0px 0px 0px black inset;
+    }
+    100%{
+        box-shadow: 0px 0px 0.5em rgb(93, 93, 93) inset;
+    }
 }
