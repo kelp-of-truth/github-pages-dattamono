@@ -1,0 +1,105 @@
+@charset "utf-8";
+*:focus{
+    outline: unset;
+}
+html,body{
+    padding: 0px;
+    margin: unset;
+    font-size: 24px;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#00ff00,#000000 20%);
+}
+.gray-back{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: calc(100vh - 80px);
+    width: 100vw;
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.main{
+    font-size: 30px;
+    position: absolute;
+    z-index: 2;
+    color: white;
+    left: 0px;
+    top: 0px;
+}
+
+
+button .material-symbols-rounded{
+    font-size: 48px;
+    color: white;
+    user-select: none;
+}
+
+.menu-icon{
+    background-color: unset;
+    border: unset;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 5px;
+    transition: 250ms;
+}
+.menu-icon:active .material-symbols-rounded{
+    transform: scale(0.9);
+}
+.menu-icon:active .material-symbols-rounded{
+    transform: scale(0.9), rotate(0deg);
+}
+#play-msc{
+    left: calc((100vw - 304px) / 5);
+}
+#library{
+    left: calc((100vw - 304px) / 5 * 3 + 60px);
+}
+#upload{
+    left: calc((100vw - 304px) / 5 * 5 + 120px);
+}
+#settings{
+    left: calc((100vw - 304px) / 5 * 7 + 180px);
+}
+.selected_menu{
+    animation: 250ms selected_menu forwards;
+}
+.settings_rotate .material-symbols-rounded{
+    animation: 250ms settings_rotate forwards;
+}
+
+@keyframes settings_rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes selected_menu {
+    100%{
+        height: 80px;
+        font-variation-settings: 'FILL' 1;
+    }
+}
+
+
+.menu{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 80px;
+    background-color: #00ff2fa2;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: unset;
+    box-sizing: border-box;
+}
+.menu .material-symbols-rounded{
+    font-size: 60px;
+}
