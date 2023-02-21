@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web MP3 Player &lt;Demo&gt;</title>
+        <link rel="stylesheet" href="./style.css">
+        <meta charset="utf-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="manifest" href="/manifest.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <link rel="shotcut icon" href="icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body style="background-color: white;">
+
+        <div class="gray-back"></div>
+
+
+        <div class="main">
+            
+        </div>
+
+
+        <div class="menu">
+            <button id="play-msc" class="menu-icon">
+                <span class="material-symbols-rounded">
+                    play_circle
+                    </span>
+            </button>
+            <button id="settings" class="menu-icon">
+                <span class="material-symbols-rounded">
+                    settings
+                    </span>
+            </button>
+            <button id="upload" onclick="audio_file.click();" class="menu-icon">
+                <span class="material-symbols-rounded">
+                    audio_file
+                    </span>
+            </button>
+            <button id="library" class="menu-icon">
+                <span class="material-symbols-rounded">
+                    library_music
+                    </span>
+            </button>
+        </div>
+
+        
+        <div id="ctrl">
+
+        </div>
+
+
+        <input type="file" id="audioFile" accept=".mp3" hidden>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="./script.js"></script>
+</html>
