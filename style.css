@@ -1,0 +1,294 @@
+html,body{
+  padding: 0px;
+  margin: 0px;
+}
+
+.profile {
+    font-size: 16px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+
+    font-family: 'Noto Sans JP', sans-serif;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 320px;
+    height: fit-content;
+    background: linear-gradient(to bottom, #000501, #031606, #05350c 80%, #00b900 150%);
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+  }
+  .profile::after {
+    z-index: 3;
+    position: absolute;
+    top: -3px; bottom: -3px;
+    left: -3px; right: -3px;
+    background: linear-gradient(to bottom, #007220, #108a22, #00ff00);
+    content: '';
+    z-index: -1;
+    border-radius: 15px;
+    box-shadow: 10px 15px 8px rgba(0, 0, 0, 0.544);
+}
+@media screen and (max-width: 400px) {
+  .profile::after{
+    box-shadow: 5px 10px 3px rgba(0, 0, 0, 0.544);
+  }
+  input,textarea,button{
+    font-size: 20px;
+  }
+}
+  
+  .banner {
+    box-shadow: 0px 1px 5px rgba(180, 180, 180, 0.537);
+    z-index: 0;
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+    width: 100%;
+    height: 100px;
+    /* background: url('https://github.com/kelp-of-truth/minecraft-views/blob/main/2023-02-22_20.39.46.png?raw=true'); */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  
+  .avatar {
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    /* background-color: white; */
+    background: url('./avatar.png') white;
+    background-size: cover;
+    border-radius: 50%;
+    margin-top: 30px;
+    left: 0px;
+    margin-left: 20px;
+    border: 5px solid #000;
+  }
+  .info::-webkit-scrollbar{
+    display: none;
+  }
+  .info {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    height: 250px;
+    overflow-y: scroll;
+    background: linear-gradient(to bottom, #373737e1, #1b1b1be1);
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid rgba(237, 237, 237, 0.129);
+    margin-top: 70px;
+    /* box-shadow: inset 0px -5px 5px rgba(205, 205, 205, 0.601); */
+  }
+  /* .info *{
+    margin-left: 2.5%;
+  } */
+  
+  h1 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  h2 {
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 0.65rem;
+  }
+  h3{
+    color: #fff;
+    font-size: 15px;
+    margin: 0px;
+    font-weight: 450;
+    
+  }
+  span{
+    color: #d8dadd;
+  }
+  hr{
+    border: unset;
+    width: 100%;
+    border-top: 1px solid rgba(232, 232, 232, 0.25);
+  }
+  ul{
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    padding-left: 1.5em;
+  }
+  .link{
+    user-select: none;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    /* border: 1px solid rgba(255, 255, 255, 0.7); */
+    text-decoration: unset;
+    font-size: 1.05rem;
+    display: block;
+    background-color: rgb(48, 48, 48);
+    /* box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.799); */
+    width: 100%;
+    /* margin-left: -1.25%; */
+    height: 24px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 5px;
+    transition: 250ms;
+    border: 1px solid rgba(255, 255, 255, 0.615);
+    cursor: default;
+  }
+  .link:hover span[class="material-symbols-sharp"],.link:hover label{
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.668);
+  }
+  .link:hover img{
+    position: relative;
+    bottom: 0px;
+    animation: 2s hover-link-img infinite;
+  }
+
+  @keyframes hover-link-img {
+    25%{
+      bottom: 0.3em;
+    }
+    40%{
+      bottom: 0px;
+      animation-play-state: paused;
+    }
+    100%{
+      animation-play-state: running;
+    }
+  }
+
+  .link:active{
+    animation: 250ms link-active forwards;
+  }
+  @keyframes link-active {
+    50%{
+        border: 0px solid unset;
+    }
+    100%{
+        box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
+    }
+  }
+  .link label{
+    margin-left: 0.5rem;
+    color: white;
+    /* color: rgb(23, 23, 23); */
+  }
+  .link img{
+    margin-left: 0.5rem;
+    -webkit-user-drag: none;
+    /* background-color: white; */
+    border-radius: 50%;
+    vertical-align: -5px;
+  }
+  .link:hover img[alt="Discord"]{
+    animation: 2.5s rotate-discord infinite;
+    transform: rotate(0deg);
+  }
+
+  @keyframes rotate-discord {
+    45%{
+      transform: rotate(0deg);
+      animation-timing-function: ease-in;
+    }
+    65%{
+      transform: rotate(400deg);
+    }
+    80%{
+      transform: rotate(360deg);
+      animation-timing-function: ease;
+      animation-play-state: paused;
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+    
+  }
+
+
+  .link span[class="material-symbols-sharp"]{
+    transition: 250ms;
+    cursor: pointer;
+    float: right;
+    margin-right: 0.5em;
+  }
+  input,textarea,button{
+    font-family: 'Noto Sans JP', sans-serif;
+    outline: unset;
+    border-radius: 3px;
+    border: 1px solid rgb(174, 174, 174);
+    background: linear-gradient(rgba(30, 30, 30, 0.75),rgba(41, 41, 41, 0.75) 120%);
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    margin-left: unset;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    transition: 350ms;
+    padding: 0.25em;
+  }
+  input:focus,textarea:focus,button:focus{
+    box-shadow: 0px 0px 5px rgba(202, 202, 202, 0.594);
+  }
+  textarea{
+    height: 6em;
+    resize: none;
+  }
+  .copyed{
+    user-select: none;
+    opacity: 1;
+    animation: 3s copyed normal;
+  }
+  @keyframes copyed {
+    15%{
+      opacity: 1;
+      animation-play-state: paused;
+    }
+    85%{
+      opacity: 1;
+      animation-play-state: running;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+
+  footer{
+    color: rgb(238, 238, 238);
+    font-size: 12px;
+  }
+
+  #share-site::after{
+    pointer-events: none;
+    transition: 150ms;
+    right: 5px;
+    bottom: 1.8rem;
+    background-color: rgba(59, 59, 59, 0.5);
+    color: white;
+    padding: 0.25em;
+    z-index: 6;
+    border: 1px solid rgb(87, 87, 87);
+    font-size: 16px;
+    position: absolute;
+    font-family: 'Noto Sans JP', sans-serif;
+    content: "Share this website";
+    opacity: 0;
+  }
+  #share-site:hover::after{
+    opacity: 1;
+  }
