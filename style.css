@@ -2,7 +2,9 @@ html,body{
   padding: 0px;
   margin: 0px;
 }
-
+*:focus{
+  outline: none;
+}
 .profile {
     font-size: 16px;
     left: 0px;
@@ -151,10 +153,10 @@ html,body{
     border: 1px solid rgba(255, 255, 255, 0.615);
     cursor: default;
   }
-  .link:hover span[class="material-symbols-sharp"],.link:hover label{
+  .link:hover span[class="material-symbols-sharp"],.link:hover label,.link:focus span[class="material-symbols-sharp"],.link:hover label{
     text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.668);
   }
-  .link:hover img{
+  .link:hover img,.link:focus img{
     position: relative;
     bottom: 0px;
     animation: 2s hover-link-img infinite;
@@ -196,7 +198,7 @@ html,body{
     border-radius: 50%;
     vertical-align: -5px;
   }
-  .link:hover img[alt="Discord"]{
+  .link:hover img[alt="Discord"],.link:focus img[alt="Discord"]{
     animation: 2.5s rotate-discord infinite;
     transform: rotate(0deg);
   }
