@@ -97,6 +97,9 @@ html,body{
     margin-top: 70px;
     /* box-shadow: inset 0px -5px 5px rgba(205, 205, 205, 0.601); */
   }
+  .info ul{
+    margin-left: 0.5em;
+  }
   /* .info *{
     margin-left: 2.5%;
   } */
@@ -274,15 +277,16 @@ html,body{
   }
 
   #share-site::after{
+    border-radius: 1px;
     pointer-events: none;
     transition: 150ms;
     right: 5px;
     bottom: 1.8rem;
-    background-color: rgba(59, 59, 59, 0.5);
+    background-color: rgba(204, 204, 204, 0.5);
     color: white;
     padding: 0.25em;
     z-index: 6;
-    border: 1px solid rgb(87, 87, 87);
+    border: 1px solid rgb(49, 49, 49);
     font-size: 16px;
     position: absolute;
     font-family: 'Noto Sans JP', sans-serif;
