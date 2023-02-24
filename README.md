@@ -1,3 +1,3 @@
 # kelp-of-truth.github.io
-## Main page
+## My website
 https://kelp-of-truth.github.io
