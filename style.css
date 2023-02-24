@@ -113,12 +113,10 @@ html,body{
     margin: 0;
     margin-bottom: 0.65rem;
   }
-  h3{
+  p{
     color: #fff;
-    font-size: 15px;
     margin: 0px;
     font-weight: 450;
-    
   }
   span{
     color: #d8dadd;
