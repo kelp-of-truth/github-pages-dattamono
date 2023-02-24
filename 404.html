@@ -1,25 +1,52 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>404 not found</title>
-        <link rel="./icon.webp">
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="./404.css">
-    </head>
-    <body>
-        <div style="text-align: center;">
-            <h1>404 NOT FOUND</h1>
-            <a style="color: black;" href="https://kelp-of-truth.github.io">メインページ</a><br><br>
-            <form id="searchPage" method="POST" action="https://github.com/search?q=user%3Akelp-of-truth+">
-                <input type="search">
-                <input type="submit" value="検索" class="searchBtn">
+<html lang="en">
+<head>
+    <title>Kelp Of Truth</title>
+    <link rel="shortcut icon" href="./icon.png">
+    <link rel="manifest" crossorigin="use-credentials" href="./manifest.json">
+    <meta name="description" content="Kelp Of Truth's Website. ">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="404 Not Found">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="404 Not Found ">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body style="width: 100vw;height: 100vh;">
+  <div id="copyed" style="font-family: 'Noto Sans JP', sans-serif;opacity: 0;font-weight: bold;z-index: 5;position:absolute;top: 0px;left: 0px;color: rgb(223, 223, 223);background-color: rgb(25, 25, 25);border-radius: 6px;border: 1px solid rgb(205, 205, 205);padding: 0.4em;font-size: 14px;box-shadow: 0px 0px 15px rgba(208, 208, 208, 0.501);pointer-events: none;">Copyed!</div>
+    <div class="profile">
+        <div class="banner"></div>
+        <div class="avatar" style="background: url('./outline_report_black_48dp.png');background-color: white;background-position: center;"></div>
+        <span class="material-symbols-sharp notranslate" style="position: absolute;right: 15px;top: 150px;user-select: none;cursor: pointer;color: rgb(235, 235, 235);" id="share-site" onclick="navigator.share({url:'https://kelp-of-truth.github.io',title:'Kelp Of Truth'})">share</span>
+        <div style="width: 100px;height: 100px;"></div>
+        <div class="info">
+            <h1>404 Not Found</h1>
+            <hr>
+            <h2>Search Repositories</h2>
+            <form onsubmit="location.href=(`https://github.com/search?q=user%3Akelp-of-truth+${document.getElementById('search_repo').value}`);">
+            <input id="search_repo" type="text" value="" style="width: calc(100% - 36px);margin-left: 36px;">
+            <label for="search_repo" style="color: white;position: relative;bottom: 35.5px;left: 5px;cursor: pointer;width: fit-content;" class="material-symbols-sharp">search</label>
             </form>
-            <div style="height: 10rem;"></div>
-            <label>フォームを送信する</label>
-            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd_LCanQL-eIOl8pwk5Thh0NEUZ-1mTrPttG9DblmWNH0v_Dg/formResponse" method="POST">
-                <textarea name="entry.1624351693" style="height: 10rem;width: 20rem;resize: none;"></textarea><br>
-                <input type="submit" value="送信" class="submitForm">
-            </form>
+            <hr>
+          <footer class="notranslate">
+            Email address : <a href="mailto:kelpoftruth@gmail.com" style="color: inherit; text-decoration: underline;" class="notranslate">kelpoftruth@gmail.com</a> <br>
+            Copyright © 2023 Kelp-Of-Truth All Rights Reserved.
+          </footer>
         </div>
-    </body>
+      </div>
+      <script type="text/javascript">let submitted = false;</script>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){};"></iframe>
+
+
+</body>
+<script src="./script.js"></script>
+
+  
 </html>
