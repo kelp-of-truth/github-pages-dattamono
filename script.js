@@ -9,7 +9,11 @@ function copyed(e){
 document.getElementById("copyed").onanimationend=()=>{
     document.getElementById("copyed").classList.remove("copyed");
 }
-
+const spotifyStat=document.getElementById("spotify-stat").src=;
+setInterval(()=>{
+    document.getElementById("spotify-stat").src="";
+    document.getElementById("spotify-stat").src=spotifyStat;
+},1000)
 
 
 // banner images
