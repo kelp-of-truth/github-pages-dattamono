@@ -9,28 +9,23 @@ function copyed(e){
 document.getElementById("copyed").onanimationend=()=>{
     document.getElementById("copyed").classList.remove("copyed");
 }
-const spotifyStat=document.getElementById("spotify-stat").src=;
-setInterval(()=>{
-    document.getElementById("spotify-stat").src="";
-    document.getElementById("spotify-stat").src=spotifyStat;
-},1000)
 
 
 // banner images
 /**
  * Lush Caves : https://github.com/kelp-of-truth/minecraft-views/blob/main/2023-02-22_20.56.27.png?raw=true
- * End City : https://github.com/kelp-of-truth/minecraft-views/blob/main/2023-02-22_20.39.46.png?raw=true
+ * End Ship : https://github.com/kelp-of-truth/minecraft-views/blob/main/2023-02-22_20.39.46.png?raw=true
  * The End : https://github.com/kelp-of-truth/minecraft-views/blob/main/2023-02-23_18.15.20.png?raw=true
  */
 window.onload=()=>{
     const bannerNum=Math.floor(Math.random()*3)
     if(bannerNum===0){
-        document.getElementsByClassName("banner")[0].style.backgroundImage="url('https://github.com/kelp-of-truth/minecraft-views/blob/main/2023-02-22_20.56.27.png?raw=true')"
+        document.getElementsByClassName("banner")[0].style.backgroundImage="url('https://kelp-of-truth.github.io/wallpapers/lush_caves.jpg')"
     }
     if(bannerNum===1){
-        document.getElementsByClassName("banner")[0].style.backgroundImage="url('https://github.com/kelp-of-truth/minecraft-views/blob/main/2023-02-22_20.39.46.png?raw=true')"
+        document.getElementsByClassName("banner")[0].style.backgroundImage="url('https://kelp-of-truth.github.io/wallpapers/end_ship.jpg')"
     }
     if(bannerNum===2){
-        document.getElementsByClassName("banner")[0].style.backgroundImage="url('https://github.com/kelp-of-truth/minecraft-views/blob/main/2023-02-23_18.15.20.png?raw=true')"
+        document.getElementsByClassName("banner")[0].style.backgroundImage="url('https://kelp-of-truth.github.io/wallpapers/the_end.jpg')"
     }
 }
