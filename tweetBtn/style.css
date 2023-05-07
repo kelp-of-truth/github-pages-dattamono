@@ -4,8 +4,8 @@ html,body{
     background-color: white;
 }
 .main{
+    padding-top: 100px;
     text-align: center;
-    padding: 100px;
 }
 #tweetBtn{
     background-color: rgb(29, 155, 240);
@@ -75,6 +75,7 @@ html,body{
     text-align: center;
     font-size: 35px;
     padding: 5px;
+    max-width: 90vw;
     width: 25em;
     border: unset;
     resize: none;
