@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+html,body{
+    background-color: white;
+}
+.main{
+    text-align: center;
+    padding: 100px;
+}
+#tweetBtn{
+    background-color: rgb(29, 155, 240);
+    border-color: rgba(0, 0, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 28px;
+    min-width: 52px;
+    min-height: 52px;
+    cursor: pointer;
+    outline-style: none;
+    user-select: none;
+    transition-duration: 0.2s;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-style: solid;
+    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    -webkit-box-align: stretch;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    align-items: stretch;
+    border: 0 solid black;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    position: relative;
+    z-index: 0;
+    color: inherit;
+    font: inherit;
+    list-style: none;
+    text-align: inherit;
+    text-decoration: none;
+    pointer-events: auto;
+}
+#tweetBtn span{
+    color: rgb(255, 255, 255);
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: "Segoe UI",Meiryo,system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+    line-height: 20px;
+    word-wrap: break-word;
+    min-width: 0px;
+    text-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0 solid black;
+    box-sizing: border-box;
+}
+#tweetBtn:hover{
+    background-color: #1c8fdb;
+}
+
+#content{
+    text-align: center;
+    font-size: 35px;
+    padding: 5px;
+    width: 25em;
+    border: unset;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid rgb(168, 168, 168);
+}
+#content:focus-visible{
+    outline: unset;
+}
