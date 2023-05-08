@@ -5,7 +5,7 @@ $("#tweetBtn").on("click",()=>{
 
     var link=String($("#content").val());
 
-    if(link.search(/https:\/\/www.youtube.com\/watch/g)!==-1||link.search(/https:\/\/youtube.com\/watch/g)!==-1||link.search(/https:\/\/m.youtube.com\/watch/g)||||link.search(/https:\/\/www.m.youtube.com\/watch/g)){
+    if(link.search(/https:\/\/www.youtube.com\/watch/g)!==-1||link.search(/https:\/\/youtube.com\/watch/g)!==-1||link.search(/https:\/\/m.youtube.com\/watch/g)||link.search(/https:\/\/www.m.youtube.com\/watch/g)){
         var youtubeURL=new URL(link);
         var params=new URLSearchParams(youtubeURL.search);
         var url;
