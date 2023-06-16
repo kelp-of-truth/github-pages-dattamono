@@ -14,6 +14,6 @@ code:not(.colorModel){
   width: 0.8em;
   box-sizing: border-box;
   border: 2px solid #ededed;
-  top: calc(0.1em);
+  top: 0.1em;
   left: 2px;
 }
