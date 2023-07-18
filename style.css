@@ -71,7 +71,7 @@ html,body{
     width: 100px;
     height: 100px;
     /* background-color: white; */
-    background: url('./avatar.png') white;
+    background: url('./icon.png') white;
     background-size: cover;
     border-radius: 50%;
     margin-top: 30px;
