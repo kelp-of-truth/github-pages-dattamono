@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: HiraginoKakuGo;
+    src: url(./HiraginoKakuGo.ttc);
+}
+
+html, body{
+    font-family: HiraginoKakuGo;
+    padding: 0px;
+    margin: 0;
+    color: #1d1d1d;
+    font-size: 20px;
+}
+header{
+    background-image: url(./header.png);
+    margin: 0;
+    padding: 0px;
+    width: 100vw;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-nav{
+    padding-left: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100vw;
+    list-style: none;
+    display: inline-flex;
+    margin-top: 0px;
+    background-color: #ffffff86;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.445);
+}
+.header-nav li:first-child{
+    margin-left: 30px;
+}
+.header-nav li{
+    font-size: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.header-nav li a{
+    position: relative;
+    color: #1d1d1d;
+    text-decoration: none;
+}
+.header-nav li a:has(span)::after{
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #1d1d1d;
+    bottom: -1px;
+    transform: scale(0, 1);
+    transform-origin: right top;
+    transition: transform 300ms ease-out;
+}
+.header-nav li a:has(span):hover::after{
+    transform: scale(1, 1);
+    transform-origin: left top;
+}
+body{
+    overflow-x: hidden;
+}
+main{
+    margin-top: 30px;
+    width: 70vw;
+    margin-left: 15vw;
+    padding-bottom: 3em;
+}
+.youtube-icon{
+    border-radius: 50%;
+}
+.youtube-display{
+    line-height: 70px;
+    display: inline-block;
+    margin-left: 30px;
+    vertical-align: top;
+}
+.youtube-name{
+    font-size: 48px;
+    font-weight: bold;
+}
+#subscribeCount{
+    font-size: 24px;
+}
+#recommendVicdeoViewCount{
+    font-size: 24px;
+    display: inline-block;
+}
+.snslink{
+    background-color: #ffffff;
+    border: 1px solid #868686;
+    width: 600px;
+    height: 64px;
+    position: relative;
+    border-radius: 2px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    transition: 250ms;
+}
+.snslink:hover{
+    box-shadow: 0px 0px 15px #0000007a;
+}
+.link-favicon{
+    height: 64px;
+    width: 64px;
+}
+.snslink a > span{
+    color: #3a3a3a;
+    position: absolute;
+    top: 10px;
+    bottom: 0px;
+    left: 80px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 36px;
+    text-decoration: none;
+    height: 64px;
+    width: calc(100% - 128px);
+}
+.open-in-new{
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    bottom: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 36px;
+    height: 36px;
+}
+#contact table td{
+    padding: 5px;
+}
+footer{
+    position: relative;
+    margin: 0;
+    padding: 0px;
+    width: 100vw;
+    height: 200px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    vertical-align: bottom;
+}
+@media screen and (max-width: 100vh) {
+    html,body{
+        font-size: 36px;
+    }
+    main{
+        width: 90vw;
+        margin-left: 5vw;
+    }
+}
