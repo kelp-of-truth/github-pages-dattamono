@@ -1,6 +1,10 @@
 @charset "utf-8";
-
+@font-face {
+    font-family: HiraginoKakuGo;
+    src: url("https://www.kelpoftruth.com/HiraginoKakuGo.ttc");
+}
 html,body{
+    font-family: HiraginoKakuGo;
     padding: 0px;
     margin: 0;
     font-size: 20px;
