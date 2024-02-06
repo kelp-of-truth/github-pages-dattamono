@@ -9,5 +9,6 @@
     }
   ],
   "start_url": "https://music.apple.com/jp/browse",
+  "display": "standalone",
   "theme_color": "#ffffff"
 }
